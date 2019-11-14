@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36841" started-at="2019-11-12T08:45:29Z" finished-at="2019-11-12T08:46:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36841" started-at="2019-11-12T08:45:29Z" finished-at="2019-11-12T08:46:06Z">
+      <class name="tp_shop.tpShop">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:tp_shop.tpShop@2b80d80f]" name="doBeforeClass" is-config="true" duration-ms="5339" started-at="2019-11-12T16:45:29Z" finished-at="2019-11-12T16:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="register()[pri:1, instance:tp_shop.tpShop@2b80d80f]" name="register" duration-ms="31483" started-at="2019-11-12T16:45:34Z" finished-at="2019-11-12T16:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- tp_shop.tpShop -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
