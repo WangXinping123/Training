@@ -12,9 +12,7 @@ public class Admin_Login  extends BaseTest{
 	
 	@BeforeClass
 	public static void testLogin() {
-		//打开页面
 		webtest.open("http://localhost:8036/index.php/Admin/Admin/login");
-		//文本框输入
 		webtest.type("name=username", "admin");
 		webtest.type("name=password", "admin123");
 		webtest.click("xpath=//input[@type='button']");
