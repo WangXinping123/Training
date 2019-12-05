@@ -1,21 +1,30 @@
+//11ä¸ª
+
 package lixiaoyue;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
+import com.webtest.utils.ReadProperties;
 
 public class Test_DiZhi extends BaseTest{
 Base_login action;
@@ -26,97 +35,80 @@ Base_login action;
 		action=new Base_login(webtest);
 	}
 
-	//µÇÂ¼
+	//ç™»å½•
 	@Test(priority = 0)
 		 public void Entry() throws InterruptedException{
 			action.login("15227564513", "123456");
 			Thread.sleep(2000);
-			assertTrue(webtest.isTextPresent("°²È«ÍË³ö"));
+			AssertJUnit.assertTrue(webtest.isTextPresent("å®‰å…¨é€€å‡º"));
 			Thread.sleep(2000);
 		}
-	//²éÑ¯¸ü¸ÄµØÖ·
+	//æŸ¥è¯¢æ›´æ”¹åœ°å€
 	@Test(priority=1)
 	public void DiZhi(){
-		//½øÈëµØÖ·Ò³
+		//è¿›å…¥åœ°å€é¡µ
 		webtest.open("http://localhost:8036/Home/Cart/cart2.html");
-		//²é¿´µØÖ·
-		webtest.click("link=¸ü¶àµØÖ·");
-		//¸ü»»µØÖ·
+		//æŸ¥çœ‹åœ°å€
+		webtest.click("link=æ›´å¤šåœ°å€");
+		//æ›´æ¢åœ°å€
 		webtest.click("xpath=//*[@id='ajax_address']/div[2]/ul/li[3]/div[1]");
 	}
-	//Ìí¼ÓÊı¾İÇı¶¯
-	@DataProvider(name="excel1")
-	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("D:/SX/DiZhi.xlsx","Sheet1");
-	}
-	
-	//ĞÂÔöµØÖ·
-	@Test(priority=2,dataProvider="excel1")
-	public void AddDiZhiSuccess(String user,String phone,String address,String message) throws InterruptedException{
-		//Ìí¼ÓµØÖ·
-		webtest.open("http://localhost:8036/Home/Cart/cart2.html");
-		webtest.click("link=ĞÂÔöÊÕ»õµØÖ·");
-		webtest.type("xpath=//*[@id='address_form']/div[2]/div/div[2]/div[1]/div/input", user);
-		webtest.type("xpath=//*[@id='address_form']/div[2]/div/div[2]/div[2]/div/input", phone);
-		webtest.click("id=province");
-		webtest.click("xpath=//*[@id='province']/option[4]");
-		Thread.sleep(1000);
-		webtest.click("id=city");
-		webtest.click("xpath=//*[@id='city']/option[10]");
-		Thread.sleep(1000);
-		
-		WebElement parentMenu=getDriver().findElement(By.id("district"));
-		Actions builder=new Actions(getDriver());
-		builder.moveToElement(parentMenu).perform(); 
-		WebElement subMenu=getDriver().findElement(By.xpath("//*[@id='district']/option[7]"));
-		subMenu.click();	
-		Thread.sleep(1000);
-		webtest.click("id=twon");
-		webtest.click("xpath=//*[@id='twon']/option[4]");
-		Thread.sleep(1000);
-		webtest.type("name=address", address);
-		webtest.click("id=address_submit");
-		if(message.equals("²Ù×÷Ê§°Ü")){
-			webtest.click("id=address_dialog_close");
-		}
-		Assert.assertEquals(message,"ĞÂÔöÊÕ»õµØÖ·");
-		//¶ÏÑÔÎª´íµÄÊ±ºò£¬¹Ø±ÕĞÂÔöµØÖ·¿ò
-		if(message.equals("²Ù×÷Ê§°Ü")){
-			webtest.click("id=address_dialog_close");
-		}
-	}
-	
-	
-	
+
 	@DataProvider(name="excel2")
 	public Object[][] getExcelDada1() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("D:/SX/FaPiao.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel(ReadProperties.getPropertyValue("data_path")+"FaPiao.xlsx","Sheet1");
 	}
-	//¸ü¸Ä·¢Æ±ĞÅÏ¢£¨µ¥Î»£©
+	//æ›´æ”¹å‘ç¥¨ä¿¡æ¯ï¼ˆå•ä½ï¼‰
 	@Test(priority=3,dataProvider="excel2")
 	public void Change(String num1,String num2,String message3){
-		webtest.open("http://localhost:8036/Home/Cart/cart2.html");
-		webtest.click("link=ĞŞ¸Ä");
+//		webtest.open("http://localhost:8036/Home/Cart/cart2.html");
+		webtest.click("link=ä¿®æ”¹");
 		webtest.click("id=addinvoice");
 		webtest.type("id=invoice_title", num1);
 		webtest.type("id=taxpayer", num2);
 		webtest.click("id=type_invoice");
-		webtest.click("link=±£´æ");
+		webtest.click("link=ä¿å­˜");
 		webtest.click("id=invoice_dialog_close");
-		Assert.assertEquals(message3,"ÇëÊäÈëÕıÈ·µÄÄÉË°ÈËÊ¶±ğºÅ");
+		AssertJUnit.assertEquals(message3,"è¯·è¾“å…¥æ­£ç¡®çš„çº³ç¨äººè¯†åˆ«å·");
 	}
 	
-	//¸ü¸Ä·¢Æ±ĞÅÏ¢£¨¸öÈË£©
+	//æ›´æ”¹å‘ç¥¨ä¿¡æ¯ï¼ˆä¸ªäººï¼‰
 	@DataProvider(name="excel3")
 	public Object[][] getExcelDada3() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("D:/SX/LeiBie.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel(ReadProperties.getPropertyValue("data_path")+"LeiBie.xlsx","Sheet1");
 	}
 	@Test(priority=4,dataProvider="excel3")
-	public void Change2(String lei){
+	public void Change2(String lei,String message4) throws InterruptedException{
 		webtest.open("http://localhost:8036/Home/Cart/cart2.html");
-		webtest.click("link=ĞŞ¸Ä");
+		Thread.sleep(2000);
+		webtest.click("link=ä¿®æ”¹");
 		webtest.click("link="+lei);
-		webtest.click("link=±£´æ");
-		assertTrue(webtest.isTextPresent("ÇëÊäÈëÕıÈ·µÄÄÉË°ÈËÊ¶±ğºÅ"));
+		webtest.click("link=ä¿å­˜");
+		//AssertJUnit.assertTrue(webtest.isTextPresent("ä¿å­˜æˆåŠŸ"));
+		AssertJUnit.assertEquals(message4,"ä¿å­˜æˆåŠŸ");
 	}
+	//å…¨é€‰åˆ é™¤
+	@Test(priority=5,description="å…¨é€‰åˆ é™¤")
+	public void DelectAll() throws Exception {
+		//é¦–å…ˆéœ€è¦æ·»åŠ å¤šä¸ªå†æ¬¡è´­ä¹°
+		webtest.open("http://localhost:8036/Home/Order/order_list.html");
+		WebElement e7 = getDriver().findElement(By.linkText("å†æ¬¡è´­ä¹°"));
+		JavascriptExecutor jse7=(JavascriptExecutor) getDriver();
+		for(int i=0;i<4;i++){
+			jse7.executeScript("arguments[0].click();", e7);
+		}
+		Thread.sleep(2000);
+////		//é»˜è®¤ä¸ºå…¨é€‰åˆ é™¤
+		WebElement e8 = getDriver().findElement(By.linkText("åˆ é™¤é€‰ä¸­çš„å•†å“"));
+		JavascriptExecutor jse8=(JavascriptExecutor) getDriver();
+		jse8.executeScript("arguments[0].click();", e8);
+		
+		
+		WebElement e9 = getDriver().findElement(By.id("removeGoods"));
+		JavascriptExecutor jse9=(JavascriptExecutor) getDriver();
+		jse9.executeScript("arguments[0].click();", e9);
+		
+		Assert.assertTrue(getDriver().getPageSource().contains("å»è´­ç‰©"));
+	}
+	
 }

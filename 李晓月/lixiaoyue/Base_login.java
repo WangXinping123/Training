@@ -1,4 +1,9 @@
+//2ï¿½ï¿½
 package lixiaoyue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 import com.webtest.core.WebDriverEngine;
 
@@ -11,11 +16,11 @@ public class Base_login{
 	  public void login(String username,String password) throws InterruptedException 
 	  {
 		  if(is_login()) {
-			  webtest.click("link=°²È«ÍË³ö");
+			  webtest.click("link=å®‰å…¨é€€å‡º");
 		  }
 		  	webtest.open("http://localhost:8036/Home/Index/index.html");
 		  	Thread.sleep(2000);
-			webtest.click("link=µÇÂ¼");
+			webtest.click("link=ç™»å½•");
 			Thread.sleep(2000);
 			webtest.type("name=username", username);
 			webtest.type("name=password", password);
@@ -27,6 +32,20 @@ public class Base_login{
 	  
 	  public boolean is_login()
 	  {
-		  return webtest.isElementPresent("link=°²È«ÍË³ö");
+		  return webtest.isElementPresent("link=å®‰å…¨é€€å‡º");
+	  }
+	  
+	  
+	  public void login2(String username,String password) throws InterruptedException 
+	  {
+		  	webtest.open("http://localhost:8036/index.php/Admin/Admin/login");
+			Thread.sleep(2000);
+			webtest.type("name=username", username);
+			webtest.type("name=password", password);
+			webtest.type("name=vertify", "1234");
+			webtest.click("name=submit");
+			Thread.sleep(2000);
+		
 	  }
 }
+

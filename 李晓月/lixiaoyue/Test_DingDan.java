@@ -1,5 +1,8 @@
+//15个
 package lixiaoyue;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.awt.Window;
@@ -17,13 +20,15 @@ import org.openqa.selenium.By.ByXPath;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.dataprovider.NSDataProvider;
 import com.webtest.demo.Login_Action;
-
+import com.webtest.utils.ReadProperties;
 
 
 public class Test_DingDan extends BaseTest{
@@ -36,34 +41,28 @@ public class Test_DingDan extends BaseTest{
 		action=new Base_login(webtest);
 	}
 
-	//��¼
-	@Test(priority = 0)
+	//登录
+	@Test(priority = 0,description="登录")
 		 public void Entry() throws InterruptedException{
 			action.login("15227564513", "123456");
 			Thread.sleep(2000);
-			assertTrue(webtest.isTextPresent("��ȫ�˳�"));
+			AssertJUnit.assertTrue(webtest.isTextPresent("安全退出"));
 			Thread.sleep(2000);
 		}
 	
-	//��¼�������
-	@Test(priority = 1)
+	//登录的情况下
+	@Test(priority = 1,description="查看我的订单")
 	 public void MyDd() throws InterruptedException{
-			webtest.click("link=�ҵĶ���");
-			assertTrue(webtest.isTextPresent("ȫ������"));
+			webtest.click("link=我的订单");
+			AssertJUnit.assertTrue(webtest.isTextPresent("全部订单"));
 	}	
-	//δ��¼�������-��ת����¼ҳ��
-//	@Test(priority = 1)
-//	 public void MyDdN() throws InterruptedException{
-//			webtest.open("http://localhost:8036/Home/Index/index.html");
-//			webtest.click("link=�ҵĶ���");
-//			assertTrue(webtest.isTextPresent("ȫ������"));
-//		}	
-
+	
+	
 	@DataProvider(name="excel")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("D:/SX/ChaXun.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel(ReadProperties.getPropertyValue("data_path")+"ChaXun.xlsx","Sheet1");
 	}
-	@Test(priority=2,dataProvider="excel")
+	@Test(priority=2,dataProvider="excel",description="查询")
 		public void CheckBy(String name,String message2) throws Exception{
 		webtest.getWindow(1);
 		System.out.println(webtest.getTitle());
@@ -71,100 +70,132 @@ public class Test_DingDan extends BaseTest{
 		WebElement e1 = getDriver().findElement(By.xpath("//*[@id='search_order']/input[2]"));
 		JavascriptExecutor jse1=(JavascriptExecutor) getDriver();
 		jse1.executeScript("arguments[0].click();", e1);
-		Assert.assertEquals(message2,"���빺�ﳵ");
+		//断言
+		//Assert.assertTrue(getDriver().getPageSource().contains("加入购物车"));
+		AssertJUnit.assertEquals(message2, "加入购物车");
 		Thread.sleep(2000);
 		webtest.click("xpath=//*[@id='navitems5']/ul/li[1]/a");
 		webtest.getWindow(0);
-	}
-	
-//	//�鿴��������
-	@Test(priority=5)
-	public void LookDetail() throws Exception{
-		webtest.open("http://localhost:8036/Home/Order/order_list.html");
-//	//�鿴��������
-		WebElement e4 = getDriver().findElement(By.linkText("�鿴����"));
-		JavascriptExecutor jse4=(JavascriptExecutor) getDriver();
-		jse4.executeScript("arguments[0].click();", e4);
-		}
-	
-	//�ٴι���
-	@Test(priority=6,description="�ٴι���")
-	public void BuyAgain() throws Exception{    
-		webtest.open("http://localhost:8036/Home/Order/order_list.html");
-		WebElement e5 = getDriver().findElement(By.linkText("�ٴι���"));
-		JavascriptExecutor jse5=(JavascriptExecutor) getDriver();
-		jse5.executeScript("arguments[0].click();", e5);
-
-		webtest.getWindow(1);
-		Thread.sleep(2000);
-		WebElement e6 = getDriver().findElement(By.xpath("/html/body/div[4]/div/div/div/div[2]/div[2]/div[1]/a"));
-		JavascriptExecutor jse6=(JavascriptExecutor) getDriver();
-		jse6.executeScript("arguments[0].click();", e6);
-	}
 		
+	}
 	
-	//�ٴι���
-		@Test(priority=7,description="�ٴι���ı�����")
-		public void BuyAgain2() throws Exception{    
+	//再次购买
+		@Test(priority=3,description="再次购买")
+		public void BuyAgain() throws Exception{    
 			webtest.open("http://localhost:8036/Home/Order/order_list.html");
-			WebElement e5 = getDriver().findElement(By.linkText("�ٴι���"));
+			WebElement e5 = getDriver().findElement(By.linkText("再次购买"));
 			JavascriptExecutor jse5=(JavascriptExecutor) getDriver();
 			jse5.executeScript("arguments[0].click();", e5);
-
+			webtest.getWindow(1);
+			Thread.sleep(2000);
+			//webtest.click("xpath=//*[@id='tpshop-cart']/div[2]/div/div/div[1]/i");
+			webtest.click("link=去结算");
+			webtest.click("id=submit_order");
+			Assert.assertTrue(getDriver().getPageSource().contains("订单提交成功"));
+		}
+			
+	//要在Look之前将所需商品加入订单列表中
+	
+		
+//	@DataProvider(name="excell")
+//	public Object[][] getExcelDada2() throws IOException{
+//		return new ExcelDataProvider().getTestDataByExcel(ReadProperties.getPropertyValue("data_path")+"Name.xlsx","Sheet1");
+//	}
+	//点击到原商品，并加入购物车
+//	@Test(priority=4,dataProvider="excell",description="点击回到原商品")
+//	public void Look(String name) throws Exception{    
+//		webtest.open("http://localhost:8036/Home/Order/order_list.html");
+//		webtest.click("link="+name);
+//		Thread.sleep(2000);
+//		webtest.click("id=join_cart");
+//		Assert.assertTrue(getDriver().getPageSource().contains("温馨提示"));
+//	}
+		
+	//查看订单详情
+		@Test(priority=5,description="查看详情")
+		public void LookDetail() throws Exception{
+			webtest.open("http://localhost:8036/Home/Order/order_list.html");
+	//查看订单详情
+			WebElement e4 = getDriver().findElement(By.linkText("查看详情"));
+			JavascriptExecutor jse4=(JavascriptExecutor) getDriver();
+			jse4.executeScript("arguments[0].click();", e4);
+			Thread.sleep(3000);
+			Assert.assertTrue(getDriver().getPageSource().contains("感谢您在商城购物，欢迎您对本次交易及所购商品进行评价。"));
+		}
+		
+	//立即付款
+		@Test(priority=6,description="立即付款")
+		public void Right() throws Exception{
+			webtest.click("link=立即付款");
+			Thread.sleep(2000);
+			Assert.assertTrue(getDriver().getPageSource().contains("订单提交成功"));
+		}
+		
+		@DataProvider(name="excelaa")
+		public Object[][] getExcelDadaa() throws IOException{
+			return new ExcelDataProvider().getTestDataByExcel(ReadProperties.getPropertyValue("data_path")+"Way.xlsx","Sheet1");
+		}
+		//选择付款方式
+		@Test(priority=7,dataProvider="excelaa",description="选择付款方式")
+		public void BuyWay(String way) throws Exception{
+			System.out.println(way);
+			webtest.click("xpath="+way);
+			webtest.click("link=确认支付方式");
+			Assert.assertTrue(getDriver().getPageSource().contains("商业用途务必购买正版,使用盗版将依法追究法律责任!!"));
+		}
+		
+		//取消订单
+		@Test(priority=8,description="取消订单")
+		public void Deletected(String way) throws Exception{
+			webtest.click("link=取消订单");
+			webtest.click("link=确定");
+			Thread.sleep(2000);
+			AssertJUnit.assertTrue(webtest.isTextPresent("操作成功"));
+			}
+	//再次购买
+		@Test(priority=9,description="再次购买改变数量")
+		public void BuyAgain2() throws Exception{    
+			webtest.open("http://localhost:8036/Home/Order/order_list.html");
+			WebElement e5 = getDriver().findElement(By.linkText("再次购买"));
+			JavascriptExecutor jse5=(JavascriptExecutor) getDriver();
+			jse5.executeScript("arguments[0].click();", e5);
 			webtest.getWindow(1);
 			Thread.sleep(2000);
 			webtest.click("link=-");
-			WebElement e6 = getDriver().findElement(By.linkText("ȥ����"));
-			JavascriptExecutor jse6=(JavascriptExecutor) getDriver();
-			jse6.executeScript("arguments[0].click();", e6);
+			webtest.click("link=去结算");
+			webtest.click("id=submit_order");
+			Assert.assertTrue(getDriver().getPageSource().contains("订单提交成功"));
 		}
-		
-		//��ѡ�ղ�
-		@Test(priority=8,description="��ѡ�ղ�")
-		public void SaveObject() throws Exception{
-			webtest.open("http://localhost:8036/home/Cart/index.html");
-			webtest.click("link=�Ƶ��ҵ��ղ�");
-		}
+//		
+//		//多选收藏
+//		@Test(priority=10,description="多选收藏")
+//		public void SaveObject() throws Exception{
+//			webtest.open("http://localhost:8036/home/Cart/index.html");
+//			webtest.click("link=移到我的收藏");
+//			Thread.sleep(2000);
+//			Assert.assertTrue(getDriver().getPageSource().contains("已添加至我的收藏"));
+//		}
 				
-		//��ѡ�ղ�
-		@Test(priority=9,description="��ѡ�ղ�")
+		//单选收藏
+		@Test(priority=11,description="单选收藏")
 		public void SaveOne() throws Exception{
 			webtest.open("http://localhost:8036/home/Cart/index.html");
 			WebElement e10 = getDriver().findElement(By.xpath("/html/body/div[4]/div/div/div/div[1]/div/a[2]"));
 			JavascriptExecutor jse10=(JavascriptExecutor) getDriver();
-			jse10.executeScript("arguments[0].click();", e10);					
-		}
-		
-		//ȫѡɾ��
-		@Test(priority=10,description="ȫѡɾ��")
-		public void DelectAll() throws Exception {
-			//������Ҫ���Ӷ���ٴι���
-			webtest.open("http://localhost:8036/Home/Order/order_list.html");
-			WebElement e7 = getDriver().findElement(By.linkText("�ٴι���"));
-			JavascriptExecutor jse7=(JavascriptExecutor) getDriver();
-			for(int i=0;i<4;i++){
-				jse7.executeScript("arguments[0].click();", e7);
-			}
+			jse10.executeScript("arguments[0].click();", e10);
+			
+			webtest.click("xpath=//*[@id='edge_45']/div/div[1]/div[1]/i");
 			Thread.sleep(2000);
-////			//Ĭ��Ϊȫѡɾ��
-			WebElement e8 = getDriver().findElement(By.linkText("ɾ��ѡ�е���Ʒ"));
-			JavascriptExecutor jse8=(JavascriptExecutor) getDriver();
-			jse8.executeScript("arguments[0].click();", e8);
-			
-			
-			WebElement e9 = getDriver().findElement(By.id("removeGoods"));
-			JavascriptExecutor jse9=(JavascriptExecutor) getDriver();
-			jse9.executeScript("arguments[0].click();", e9);	
-		}
-		
-		//��ѡɾ��
-		@Test(priority=11,description="��ѡɾ��")
+			AssertJUnit.assertTrue(webtest.isTextPresent("已添加至我的收藏"));
+		}		
+		//单选删除
+		@Test(priority=12,description="单选删除")
 		public void DelectOne() throws Exception {
 			webtest.open("http://localhost:8036/Home/Order/order_list.html");	
-			webtest.click("link=�ٴι���");
+			webtest.click("link=再次购买");
 			webtest.click("xpath=//*[@id='tpshop-cart']/div[2]/div/div/div[1]/i");
 			webtest.click("xpath=//*[@id='edge_10']/div/div[1]/div[1]/i");
-			webtest.click("link=ɾ��");	
+			webtest.click("link=删除");	
 			webtest.click("id=removeGoods");
 		}
 
