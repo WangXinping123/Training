@@ -30,15 +30,16 @@ public class Evaluation extends BaseTest{
 	
 	@Test(description="已评论区查看商品评论")
 	public void seeEval(){
-//		webtest.click("link=已评论");
-//		webtest.click("xpath=//table[contains(text(),'201911261359351951')]/");
-		webtest.click("xpath=//div[@class='order-alone-li']/table[1]/tr[2]/td[6]/div/p/a");
+		webtest.click("link=已评论");
+		webtest.click("xpath=//div[@class='order-alone-li']/table[1]/tbody/tr[2]/td[6]/div/p/a");
+		assertTrue(webtest.isTextPresent("广西移动官方"));
+	}
+	
+	@Test(description="对待评论订单进行评论")
+	public void eval(){
+		webtest.click("link=待评论订单");
+		webtest.click("xpath=//div[@class='order-alone-li']/table/tbody/tr[2]/td[6]/div/p/a");
 		assertTrue(webtest.isTextPresent("评价订单"));
 	}
-//	
-//	@Test(description="对待评论订单进行评论")
-//	public void eval(){
-//		
-//	}
-
+	
 }
