@@ -3,7 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="tp_shop.tpShop"/>
+      <class name="tp_shop.shop"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tp_shop.shop">
+        <methods>
+          <include name="possessionCenter3"/>
+          <include name="possessionCenter4"/>
+          <include name="possessionCenter5"/>
+          <include name="possessionCenter6"/>
+          <include name="possessionCenter2"/>
+          <include name="wrongRegister"/>
+          <include name="possessionCenter7"/>
+          <include name="possessionCenter8"/>
+          <include name="possessionCenter9"/>
+          <include name="possessionCenter11"/>
+          <include name="wrongRegister2"/>
+          <include name="possessionCenter10"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- tp_shop.shop -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
