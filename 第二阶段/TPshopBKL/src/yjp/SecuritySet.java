@@ -17,7 +17,8 @@ public class SecuritySet extends BaseTest {
 	SoftAssert soft = new SoftAssert();
 
 	Login action;
-	@BeforeClass(description="登录")
+
+	@BeforeClass(description = "登录")
 	public void setup() throws Exception {
 		action = new Login(webtest);
 		webtest.open(url);

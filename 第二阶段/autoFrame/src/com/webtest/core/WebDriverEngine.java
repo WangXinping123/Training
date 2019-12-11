@@ -60,15 +60,15 @@ public class WebDriverEngine {
 		finder = new ElementFinder(driver);
 		action = new Actions(driver);
 	}
-	
-	public int findnum(String locator){
+
+	public int findnum(String locator) {
 		WebElement elementText = finder.findElement(locator);
 		String info = elementText.getText();
-		String regEx="[^0-9]";
+		String regEx = "[^0-9]";
 		Pattern p = Pattern.compile(regEx);
 		Matcher m = p.matcher(info);
-		System.out.println( m.replaceAll("").trim());
-		int i=	Integer.parseInt(m.replaceAll("").trim());
+		System.out.println(m.replaceAll("").trim());
+		int i = Integer.parseInt(m.replaceAll("").trim());
 		return i;
 	}
 
@@ -262,11 +262,11 @@ public class WebDriverEngine {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
 	}
-	
-	public void ModifyElementPro(String xpath,String js) {
+
+	public void ModifyElementPro(String xpath, String js) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		WebElement elm = driver.findElement(By.xpath(xpath));
-		j.executeScript(js,elm);
+		j.executeScript(js, elm);
 	}
 
 	public void mouseoverElement(String locator) throws InterruptedException {
@@ -287,10 +287,10 @@ public class WebDriverEngine {
 		List<String> windows = new ArrayList<String>();
 		for (String handle : driver.getWindowHandles()) {
 			windows.add(handle);
-			String curruentTitle=driver.switchTo().window(handle).getTitle();
+			String curruentTitle = driver.switchTo().window(handle).getTitle();
 			System.out.println(curruentTitle);
 		}
-//		driver.switchTo().window(windows.get(i));
+		// driver.switchTo().window(windows.get(i));
 		System.out.println(windows.size());
 	}
 
@@ -324,6 +324,11 @@ public class WebDriverEngine {
 	public void downClick() {
 		action.sendKeys(Keys.DOWN).perform();
 
+	}
+
+	public void tapDown() {
+
+		action.sendKeys(Keys.DOWN).perform();
 	}
 
 	public void backspaceClick() {
