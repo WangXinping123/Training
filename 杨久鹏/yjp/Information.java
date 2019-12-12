@@ -2,12 +2,23 @@ package com.webtest.yjp;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import com.sun.mail.handlers.image_gif;
+import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
-
+import com.webtest.dataprovider.ExcelDataProvider;
+@Listeners(ApiListener.class)
 /**
  * 个人信息
  * @author yjp
@@ -27,39 +38,67 @@ public class Information extends BaseTest{
 		webtest.click("link=个人信息");
 		
 	}
-	
-	@Test(description="修改个人信息成功")
-	public void modify_Success1(){
-		// 有问题
-		webtest.click("xpath=//img[@id='preview']");
-		//webtest.enterFrame("layui-layer4");
-		webtest.type("xpath=//input[type='file']", "F:\\水形物语.jpg");
-		webtest.type("name=nickname", "测试账号VIP");
-		webtest.click("xpath=//input[name='sex',value='1']");
-		webtest.type("name=birthday", "1999-10-04");
-		webtest.click("xpath=//input[@value='确认保存']");
-		assertTrue(webtest.isTextPresent("操作成功"));
+	@DataProvider(name="name")
+	public Object[][] getExcelDada_Name() throws IOException{
+		return new ExcelDataProvider().getTestDataByExcel("data-yjp/information.xlsx","Sheet1");
 	}
-	
-	@Test(description="修改昵称为空或空格")
-	public void modify_Name(){
-		webtest.type("name=nickname", " ");
+	@Test(description="修改个人信息,昵称",dataProvider="name")
+	public void modify_Name(String image_url,String nickname,String sex,String birthday,String dataAssert) throws InterruptedException{
+		SoftAssert soft =new SoftAssert();
+		webtest.ModifyElementPro("//input[@id='head_pic']", "arguments[0].setAttribute('type','file');");		
+		webtest.type("xpath=//input[@id='head_pic']", image_url);
+		
+		Thread.sleep(2000);
+		webtest.type("name=nickname",nickname);
+		webtest.click("xpath=//input[name='sex',value='"+sex+"']");
+		webtest.type("name=birthday", birthday);
 		webtest.click("xpath=//input[@value='确认保存']");
-		assertTrue(webtest.isTextPresent("操作失败"));
+		soft.assertTrue(webtest.isTextPresent(dataAssert));
+		
+		Thread.sleep(5000);
+		soft.assertAll();
+		
 	}
+
 	
-	@Test(description="清空生日保存")
-	public void modify_Birthday1(){
-		webtest.type("name=birthday", " ");
-		webtest.click("xpath=//input[@value='确认保存']");
-		assertTrue(webtest.isTextPresent("操作失败"));
+	@DataProvider(name="birthday")
+	public Object[][] getExcelDada_Birthday() throws IOException{
+		return new ExcelDataProvider().getTestDataByExcel("data-yjp/information.xlsx","Sheet2");
 	}
-	
-	@Test(description="生日设置不合法")
-	public void modify_Birthday2(){
-		webtest.type("name=birthday", "2099-13-32");
+	@Test(description="修改个人信息,生日",dataProvider="birthday")
+	public void modify_Birthday(String image_url,String nickname,String sex,String birthday,String dataAssert) throws InterruptedException{
+		SoftAssert soft =new SoftAssert();
+		webtest.ModifyElementPro("//input[@id='head_pic']", "arguments[0].setAttribute('type','file');");		
+		webtest.type("xpath=//input[@id='head_pic']", image_url);
+		Thread.sleep(2000);
+		webtest.type("name=nickname",nickname);
+		webtest.click("xpath=//input[name='sex',value='"+sex+"']");
+		webtest.type("name=birthday", birthday);
 		webtest.click("xpath=//input[@value='确认保存']");
-		assertTrue(webtest.isTextPresent("操作失败"));
+		soft.assertTrue(webtest.isTextPresent(dataAssert));
+		Thread.sleep(5000);
+		soft.assertAll();
+		
+	}
+
+	@DataProvider(name="img")
+	public Object[][] getExcelDada_Img() throws IOException{
+		return new ExcelDataProvider().getTestDataByExcel("data-yjp/information.xlsx","Sheet3");
+	}
+	@Test(description="上传非图片文件",dataProvider="img")
+	public void modify_Img(String image_url,String nickname,String sex,String birthday,String dataAssert) throws InterruptedException{
+		SoftAssert soft =new SoftAssert();
+		webtest.ModifyElementPro("//input[@id='head_pic']", "arguments[0].setAttribute('type','file');");		
+		webtest.type("xpath=//input[@id='head_pic']", image_url);
+		Thread.sleep(2000);
+		webtest.type("name=nickname",nickname);
+		webtest.click("xpath=//input[name='sex',value='"+sex+"']");
+		webtest.type("name=birthday", birthday);
+		webtest.click("xpath=//input[@value='确认保存']");
+		soft.assertTrue(webtest.isTextPresent(dataAssert));
+		Thread.sleep(5000);
+		soft.assertAll();
+		
 	}
 
 	@Test(description="更换绑定手机成功")
@@ -87,4 +126,5 @@ public class Information extends BaseTest{
 		webtest.click("link=安全设置");
 		assertTrue(webtest.isTextPresent("互联网账号存在被盗风险，建议您定期更改密码以及保护账户安全。"));
 	}
+	
 }

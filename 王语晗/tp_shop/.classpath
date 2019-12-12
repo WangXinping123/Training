@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="libs/xmlbeans-3.0.1.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/auto2019"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/api-test-2019"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

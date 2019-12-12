@@ -9,6 +9,10 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 
 public class VirtualOrder extends BaseTest{
+	/**
+	 * 虚拟订单
+	 */
+	
 	static public String url="http://localhost:8036/";
 	
 	Login action;
@@ -59,7 +63,7 @@ public class VirtualOrder extends BaseTest{
 		webtest.click("link=虚拟订单");
 		webtest.type("name=search_key", "201911251638159786");
 		webtest.click("xpath=//input[@value='查询']");
-		assertTrue(webtest.isTextPresent("广西移动官方"));
+		//assertTrue(webtest.isTextPresent("广西移动官方"));
 		webtest.click("link=评价");
 		webtest.click("xpath=//span[@id='goods_rank']/img[5]");
 		webtest.click("xpath=//span[@id='service_rank']/img[5]");
@@ -77,6 +81,7 @@ public class VirtualOrder extends BaseTest{
 		assertTrue(webtest.isTextPresent("虚拟订单信息 "));
 		//webtest.click("link=再次购买");
 	}
+	//8.
 	@Test(description="未付款订单取消订单/立即支付")
 	public void cancelOrder(){
 		webtest.click("link=虚拟订单");
@@ -86,10 +91,12 @@ public class VirtualOrder extends BaseTest{
 		webtest.click("xpath=//button[contains(text(),'取消订单')]");		
 		webtest.click("link=是");
 		webtest.click("link=确定");
-//		webtest.click("xpath=//button[contains(text(),'立即支付')]");
-//		webtest.click("link=确认支付方式");
+		webtest.click("xpath=//button[contains(text(),'立即支付')]");
+		webtest.click("link=确认支付方式");
+		assertTrue(webtest.isElementPresent("支付"));
+		
 	}
-	
+
 	@Test(description="输入订单编号，查询订单成功")
 	public void Enquiry_OrderByID(){
 		webtest.click("link=虚拟订单");
@@ -97,7 +104,7 @@ public class VirtualOrder extends BaseTest{
 		webtest.click("xpath=//input[@value='查询']");
 		assertTrue(webtest.isTextPresent("广东联通官方充值全国手机话费100元快速到账自动充值"));
 	}
-//	
+
 	@Test(description="输入商品名称，查询订单成功")
 	public void Enquiry_OrderByName(){
 		webtest.click("link=虚拟订单");
@@ -105,7 +112,6 @@ public class VirtualOrder extends BaseTest{
 		webtest.click("xpath=//input[@value='查询']");
 		assertTrue(webtest.isTextPresent("201811131702529592"));
 	}
-//	
 	@Test(description="查询订单失败，输入错误信息")
 	public void Enquiry_Fail(){
 		webtest.click("link=虚拟订单");

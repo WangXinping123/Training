@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1435" started-at="2019-12-12T02:10:54Z" finished-at="2019-12-12T02:10:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1435" started-at="2019-12-12T02:10:54Z" finished-at="2019-12-12T02:10:55Z">
+      <class name="QingGuo.addressList">
+        <test-method status="PASS" signature="addressList()[pri:1, instance:QingGuo.addressList@75bd9247]" name="addressList" duration-ms="1395" started-at="2019-12-12T10:10:54Z" finished-at="2019-12-12T10:10:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressList -->
+        <test-method status="PASS" signature="wrongAddressList()[pri:2, instance:QingGuo.addressList@75bd9247]" name="wrongAddressList" duration-ms="14" started-at="2019-12-12T10:10:55Z" finished-at="2019-12-12T10:10:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongAddressList -->
+      </class> <!-- QingGuo.addressList -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

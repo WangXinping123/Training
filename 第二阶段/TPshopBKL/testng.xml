@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+	<test name="Test">
+		<classes>
+			<!-- <class name="wxp_ShoppingCart.TestCartWithoutLogin" />
+			<class name="wxp_ShoppingCart.TestAddCart" />
+			<class name="wxp_ShoppingCart.TestCart01" />
+			<class name="wxp_ShoppingCart.TestToPayAddAddress" />
+
+			<class name="lixiaoyue.Test_DingDan" />
+			<class name="lixiaoyue.Test_DiZhi" /> -->
+
+			<class name="yjp.AddAddress" />
+			<class name="yjp.Evaluation" />
+			<class name="yjp.Information" />
+			<class name="yjp.Notice" />
+			<class name="yjp.SecuritySet" />
+			<class name="yjp.AddressMag" />
+			<class name="yjp.MyOrder" />
+			<class name="yjp.VirtualOrder" />
+			<class name="yjp.Distribution" />
+
+			<!-- <class name="shouye.ys.NewTest" />
+			<class name="shouye.ys.SYTest" />
+			<class name="shouye.ys.SyTestlogin" />
+			
+			<class name="wyh.shop" /> -->
+
+		</classes>
+
+	</test> <!-- Test -->
+
+	<listeners>
+		<listener class-name="com.webtest.core.ApiListener"></listener>
+	</listeners>
+
+</suite> <!-- Suite -->
