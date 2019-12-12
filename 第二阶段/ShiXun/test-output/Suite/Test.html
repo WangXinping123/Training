@@ -1,0 +1,2543 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>140/47/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 10 16:39:44 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>3850 seconds (3850134 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564513, 125, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187523, 123456, ?????????, ?????????????</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;?????????&gt; but was:&lt;?????????????&gt;
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1336788066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1336788066'><pre>java.lang.AssertionError: expected:&lt;?????????&gt; but was:&lt;?????????????&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: , 126, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187524, 123456, ?????, ????????????????</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;?????&gt; but was:&lt;????????????????&gt;
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113072690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113072690'><pre>java.lang.AssertionError: expected:&lt;?????&gt; but was:&lt;????????????????&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564514,   , 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187525, 123456, ???????????????, ????????????????</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;???????????????&gt; but was:&lt;????????????????&gt;
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319511296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319511296'><pre>java.lang.AssertionError: expected:&lt;???????????????&gt; but was:&lt;????????????????&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564519, 131, 123, 123, 15231187523, 123,  , //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187520, 123456, ?????????, ?????</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;?????????&gt; but was:&lt;?????&gt;
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076477623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076477623'><pre>java.lang.AssertionError: expected:&lt;?????????&gt; but was:&lt;?????&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>17</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564523, 135, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187534,  , ????????????, ?????????????</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;????????????&gt; but was:&lt;?????????????&gt;
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883093798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883093798'><pre>java.lang.AssertionError: expected:&lt;????????????&gt; but was:&lt;?????????????&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at lixiaoyue.Test_GongYingShang.GetPot(Test_GongYingShang.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.Time()'><b>Time</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销的时间<br>Parameters: sname, 200, 90, 2019-11-12 22:00:00, 2019-12-13 22:00:00</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao4.Time(ChangYongCuXiao4.java:108)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1568782602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1568782602'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao4.Time(ChangYongCuXiao4.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='demoyk.Setting.addTra()'><b>addTra</b><br>Test class: demoyk.Setting<br>Parameters: 天津, 0, 0, 0, 0</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at demoyk.Setting.addTra(Setting.java:173)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659042913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659042913'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.addTra(Setting.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>31</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Shop.branddel()'><b>branddel</b><br>Test class: demoyk.Shop</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [19] but found [20]
+	at demoyk.Shop.branddel(Shop.java:163)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965485208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965485208'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [19] but found [20]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.branddel(Shop.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Setting.delRole()'><b>delRole</b><br>Test class: demoyk.Setting</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [69] but found [68]
+	at demoyk.Setting.delRole(Setting.java:445)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace543001850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace543001850'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [69] but found [68]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.delRole(Setting.java:445)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>28</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: mname2, -1, 90</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao4.dingdancuxiao(ChangYongCuXiao4.java:62)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372488339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1372488339'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao4.dingdancuxiao(ChangYongCuXiao4.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.eTime()'><b>eTime</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购的时间<br>Parameters: stitle, 2019-11-12 22:00:00, 2019-12-13 22:00:00, 20, 40, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.eTime(ChangYongCuXiao2.java:136)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605347181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605347181'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.eTime(ChangYongCuXiao2.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>28</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsLabe()'><b>goodsLabe</b><br>Test class: demoyk.Shop<br>Parameters: 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at demoyk.Shop.goodsLabe(Shop.java:115)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace351352199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351352199'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsLabe(Shop.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 一本有意思的书, 图书, 少儿, 0-2岁, 123, 231</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [341] but found [325]
+	at demoyk.Shop.goodsMage(Shop.java:76)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387460501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387460501'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [341] but found [325]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsMage(Shop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters:  , 图书, 少儿, 0-2岁, 123, 231</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [341] but found [342]
+	at demoyk.Shop.goodsMage(Shop.java:76)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1074289331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074289331'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [341] but found [342]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsMage(Shop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 一本好书, 图书, 少儿, 0-2岁, 555, 231</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [342] but found [343]
+	at demoyk.Shop.goodsMage(Shop.java:76)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1728651067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728651067'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [342] but found [343]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsMage(Shop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 罐头, 图书, 少儿, 0-2岁, 123, 231</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [343] but found [344]
+	at demoyk.Shop.goodsMage(Shop.java:76)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1583215961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1583215961'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [343] but found [344]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsMage(Shop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 一本非常好的书,  ,  ,  , 123, 231</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text:  
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LAPTOP-KG4V20B1&apos;, ip: &apos;169.254.230.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.webtest.core.WebDriverEngine.selectByVisibleText(WebDriverEngine.java:236)
+	at demoyk.Shop.goodsMage(Shop.java:62)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000887570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000887570'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text:  
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LAPTOP-KG4V20B1&apos;, ip: &apos;169.254.230.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.webtest.core.WebDriverEngine.selectByVisibleText(WebDriverEngine.java:236)
+	at demoyk.Shop.goodsMage(Shop.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>13</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsType()'><b>goodsType</b><br>Test class: demoyk.Shop<br>Parameters: i7+2080ti</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at demoyk.Shop.goodsType(Shop.java:183)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1766056665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1766056665'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsType(Shop.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>26</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsType()'><b>goodsType</b><br>Test class: demoyk.Shop<br>Parameters: ‘11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at demoyk.Shop.goodsType(Shop.java:183)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356343131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356343131'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsType(Shop.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>25</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsType()'><b>goodsType</b><br>Test class: demoyk.Shop<br>Parameters: 小王子</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at demoyk.Shop.goodsType(Shop.java:183)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace145678004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145678004'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [23]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.goodsType(Shop.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>26</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Setting.messageList()'><b>messageList</b><br>Test class: demoyk.Setting<br>Parameters: user002, 749822099@qq.com, 123, 客服</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [12] but found [13]
+	at demoyk.Setting.messageList(Setting.java:207)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676815671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1676815671'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [12] but found [13]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.messageList(Setting.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>32</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.messageList()'><b>messageList</b><br>Test class: demoyk.Setting<br>Parameters: user001, 33133167@qq.com, 123321, 运营</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [13] but found [14]
+	at demoyk.Setting.messageList(Setting.java:207)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2090280776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2090280776'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [13] but found [14]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.messageList(Setting.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>32</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.system()'><b>system</b><br>Test class: demoyk.Setting<br>Parameters: 管理员1, 内容设置, Admin</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 内容设置
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LAPTOP-KG4V20B1&apos;, ip: &apos;169.254.230.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.webtest.core.WebDriverEngine.selectByVisibleText(WebDriverEngine.java:236)
+	at demoyk.Setting.system(Setting.java:359)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038171900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038171900'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 内容设置
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LAPTOP-KG4V20B1&apos;, ip: &apos;169.254.230.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.webtest.core.WebDriverEngine.selectByVisibleText(WebDriverEngine.java:236)
+	at demoyk.Setting.system(Setting.java:359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>16</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.systemNot()'><b>systemNot</b><br>Test class: demoyk.Setting</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [69] but found [70]
+	at demoyk.Setting.systemNot(Setting.java:412)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1426919585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426919585'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [69] but found [70]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.systemNot(Setting.java:412)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticleFail()'><b>test_AddArticleFail</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 错误数据<br>Parameters: 111111111111111111111111111111111111111111111, 3, 1234, 1234, 0, 名称过长</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1074682003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074682003'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticleFail()'><b>test_AddArticleFail</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 错误数据<br>Parameters: 1111111, 4, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, 1235, 10, 关键字过长</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace139172588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace139172588'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticleFail()'><b>test_AddArticleFail</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 错误数据<br>Parameters: abcdef, acd, 1234, 1234, 14, 请输入有效的排序</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace906603385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906603385'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at wxpBackgroundPage.ContentManage.test_AddArticleFail(ContentManage.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticlePass()'><b>test_AddArticlePass</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 正确<br>Parameters: qweh&njfdsg, 7, qweh&njfdsg, qweh&njfdsg, 12</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at wxpBackgroundPage.ContentManage.test_AddArticlePass(ContentManage.java:62)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733522684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733522684'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at wxpBackgroundPage.ContentManage.test_AddArticlePass(ContentManage.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='demoyk.Shop.typeDel()'><b>typeDel</b><br>Test class: demoyk.Shop</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [21] but found [23]
+	at demoyk.Shop.typeDel(Shop.java:203)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1617662999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617662999'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [21] but found [23]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Shop.typeDel(Shop.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Setting.userMasg()'><b>userMasg</b><br>Test class: demoyk.Setting<br>Parameters: 管理员, 这是一个管理员</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [10] but found [11]
+	at demoyk.Setting.userMasg(Setting.java:274)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1976145815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976145815'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [10] but found [11]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.userMasg(Setting.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.userMasgNosys()'><b>userMasgNosys</b><br>Test class: demoyk.Setting</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [3] but found [11]
+	at demoyk.Setting.userMasgNosys(Setting.java:339)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1352663863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1352663863'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [3] but found [11]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at demoyk.Setting.userMasgNosys(Setting.java:339)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>32</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: 4343, 20, 40, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1327714567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1327714567'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ptitle2, 0, 40, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431618307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431618307'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ptitle3, -1, 40, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1598068850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1598068850'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ntitle2, 20, 0, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252819402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252819402'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ntitle3, 20, -1, 30</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2059830767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2059830767'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: vtitle1, 20, 20, 21</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180245656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180245656'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: vtitle3, 20, 20, -1</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017890623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017890623'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao2.yingxiao(ChangYongCuXiao2.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: nname3, 90, -1</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao(ChangYongCuXiao3.java:93)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1369080285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1369080285'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao(ChangYongCuXiao3.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销的时间<br>Parameters: sname0, 90, 20, 2019-11-30 10:00:00, 2019-12-31 10:00:00</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao(ChangYongCuXiao3.java:299)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1462574872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1462574872'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao(ChangYongCuXiao3.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>35</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: a4, -1, 20, 10</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:81)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344751179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344751179'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>25</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: c4, 20, 20, -1</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:81)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1557752641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1557752641'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>25</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购的开始时间<br>Parameters: d1, 20, 20, 10, 2019-11-25</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:135)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1701461355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1701461355'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao1.yingxiao1(ChangYongCuXiao1.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>30</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T21, 75, 20</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao1(ChangYongCuXiao3.java:161)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774400964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774400964'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao1(ChangYongCuXiao3.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T22, 76, 20</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao1(ChangYongCuXiao3.java:161)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace960609751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace960609751'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao1(ChangYongCuXiao3.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao2()'><b>yingxiao2</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T31, 75, 20</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao2(ChangYongCuXiao3.java:230)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402374410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402374410'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao2(ChangYongCuXiao3.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao2()'><b>yingxiao2</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T32, 76, 20</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at jinmingming.ChangYongCuXiao3.yingxiao2(ChangYongCuXiao3.java:230)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1894575391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1894575391'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at jinmingming.ChangYongCuXiao3.yingxiao2(ChangYongCuXiao3.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Apply()'><b>Apply</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>7</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Commodity()'><b>Commodity</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>6</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Entry()'><b>Entry</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>16</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564515, 127,  , 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187526, 123456, ????????????????, ????????????????</td>
+<td></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564516, 128, 123,  , 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187527, 123456, ????????????????, ????????????????</td>
+<td></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564517, 129, 123, 123,  , 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187528, 123456, ??????????绰???????, ??????????绰???????</td>
+<td></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564518, 130, 123, 123, 15231187523,  , //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187529, 123456, ????????????????, ????????????????</td>
+<td></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564520, 132, 123, 123, 15231187523, 123, //*[@id='province']/option[2],  , //*[@id='district']/option[2], 15231187531, 123456, ?????????, ?????????</td>
+<td></td>
+<td>17</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564521, 133, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2],  , 15231187532, 123456, ?????????, ?????????</td>
+<td></td>
+<td>20</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564522, 134, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], , 123456, ?????????, ?????????</td>
+<td></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564524, 136, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187534, 123456, ????????????????, ????????????????</td>
+<td></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564525, 137, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187534, 123456, ?????????????, ?????????????</td>
+<td></td>
+<td>26</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.GetPot()'><b>GetPot</b><br>Test class: lixiaoyue.Test_GongYingShang<br>Parameters: 15227564526, 137, 123, 123, 15231187523, 123, //*[@id='province']/option[2], //*[@id='city']/option[2], //*[@id='district']/option[2], 15231187534, 123456, ?????????????, ?????????????</td>
+<td></td>
+<td>23</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Goods()'><b>Goods</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>8</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.List()'><b>List</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>7</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.List2()'><b>List2</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>6</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Order()'><b>Order</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>6</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Refund()'><b>Refund</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>8</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Settlement()'><b>Settlement</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>7</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.Time()'><b>Time</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销的时间<br>Parameters: ename, 200, 90, 2019-12-12 22:00:00, 2019-12-11 22:00:00</td>
+<td></td>
+<td>16</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='lixiaoyue.Test_GongYingShang.Transfer()'><b>Transfer</b><br>Test class: lixiaoyue.Test_GongYingShang</td>
+<td></td>
+<td>7</td>
+<td>lixiaoyue.Test_GongYingShang@7dc36524</td></tr>
+<tr>
+<td title='demoyk.Setting.addTra()'><b>addTra</b><br>Test class: demoyk.Setting<br>Parameters: 石家庄, 1, 1, 1, 1</td>
+<td></td>
+<td>31</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.addTra()'><b>addTra</b><br>Test class: demoyk.Setting<br>Parameters: 河北, 999999999999, 1, 1, 1</td>
+<td></td>
+<td>31</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.addmail()'><b>addmail</b><br>Test class: demoyk.Setting<br>Parameters: 【tpshop】, 123, 用户注册</td>
+<td></td>
+<td>26</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.addmail()'><b>addmail</b><br>Test class: demoyk.Setting<br>Parameters: 【tpshop】, 124, 身份验证</td>
+<td></td>
+<td>26</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.addmail()'><b>addmail</b><br>Test class: demoyk.Setting<br>Parameters: 123321, 125, 客户下单</td>
+<td></td>
+<td>26</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.addmail()'><b>addmail</b><br>Test class: demoyk.Setting<br>Parameters: 【tpshop】, 126, 待确认的取消订单</td>
+<td></td>
+<td>26</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Shop.brandList()'><b>brandList</b><br>Test class: demoyk.Shop<br>Parameters: 小厂家, 图书, 少儿</td>
+<td></td>
+<td>23</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.brandList()'><b>brandList</b><br>Test class: demoyk.Shop<br>Parameters: mi, 家居, 灯具</td>
+<td></td>
+<td>23</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.brandList()'><b>brandList</b><br>Test class: demoyk.Shop<br>Parameters: 小厂家, 图书, 小说</td>
+<td></td>
+<td>23</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.brandList()'><b>brandList</b><br>Test class: demoyk.Shop<br>Parameters: 小米, 图书, 小说</td>
+<td></td>
+<td>23</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.brandList()'><b>brandList</b><br>Test class: demoyk.Shop<br>Parameters: 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, 图书, 少儿</td>
+<td></td>
+<td>23</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='jinmingming.Click.dapeigouguanli()'><b>dapeigouguanli</b><br>Test class: jinmingming.Click<br>Test method: 搭配购管理</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='demoyk.Setting.delArea()'><b>delArea</b><br>Test class: demoyk.Setting</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Shop.delGoods()'><b>delGoods</b><br>Test class: demoyk.Shop</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.delLabe()'><b>delLabe</b><br>Test class: demoyk.Shop</td>
+<td></td>
+<td>16</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Setting.delList()'><b>delList</b><br>Test class: demoyk.Setting</td>
+<td></td>
+<td>31</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.delUser()'><b>delUser</b><br>Test class: demoyk.Setting</td>
+<td></td>
+<td>31</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.delmail()'><b>delmail</b><br>Test class: demoyk.Setting</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: name1, 200, 90</td>
+<td></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: 优惠减价, 200, 90</td>
+<td></td>
+<td>9</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: mname, 0, 90</td>
+<td></td>
+<td>9</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: tname1, 200, 101</td>
+<td></td>
+<td>9</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao4.dingdancuxiao()'><b>dingdancuxiao</b><br>Test class: jinmingming.ChangYongCuXiao4<br>Test method: 订单促销<br>Parameters: tname1, 200, 0</td>
+<td></td>
+<td>9</td>
+<td>jinmingming.ChangYongCuXiao4@5ba23b66</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.eTime()'><b>eTime</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购的时间<br>Parameters: etitle, 2019-12-12 22:00:00, 2019-11-13 22:00:00, 20, 40, 30</td>
+<td></td>
+<td>17</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.Click.fenxiangtuan()'><b>fenxiangtuan</b><br>Test class: jinmingming.Click<br>Test method: 分享团</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='jinmingming.Click.fenxiangtuan2()'><b>fenxiangtuan2</b><br>Test class: jinmingming.Click<br>Test method: 佣金团</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='jinmingming.Click.fenxiangtuan3()'><b>fenxiangtuan3</b><br>Test class: jinmingming.Click<br>Test method: 抽奖团</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshangpin()'><b>fenxiaoshangpin</b><br>Test class: jinmingming.fenxiaoguanli1<br>Parameters: 分销商品, 商业用途必须购买正版,使用盗版将追究法律责任</td>
+<td></td>
+<td>0</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshangpin()'><b>fenxiaoshangpin</b><br>Test class: jinmingming.fenxiaoguanli1<br>Parameters: 分销商列表, 商业用途必须购买正版,使用盗版将追究法律责任</td>
+<td></td>
+<td>0</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshangpin()'><b>fenxiaoshangpin</b><br>Test class: jinmingming.fenxiaoguanli1<br>Parameters: 分销关系, 商业用途必须购买正版,使用盗版将追究法律责任</td>
+<td></td>
+<td>0</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshangpin()'><b>fenxiaoshangpin</b><br>Test class: jinmingming.fenxiaoguanli1<br>Parameters: 分销商等级, 商业用途必须购买正版,使用盗版将追究法律责任</td>
+<td></td>
+<td>0</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshangpin()'><b>fenxiaoshangpin</b><br>Test class: jinmingming.fenxiaoguanli1<br>Parameters: 分成日志, 商业用途必须购买正版,使用盗版将追究法律责任</td>
+<td></td>
+<td>0</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='jinmingming.fenxiaoguanli1.fenxiaoshezhi()'><b>fenxiaoshezhi</b><br>Test class: jinmingming.fenxiaoguanli1</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.fenxiaoguanli1@4cdbe50f</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsLabe()'><b>goodsLabe</b><br>Test class: demoyk.Shop<br>Parameters: 电脑</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsLabe()'><b>goodsLabe</b><br>Test class: demoyk.Shop<br>Parameters:   *（）</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 一本书, 图书, 少儿, 0-2岁, 123, 231</td>
+<td></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='demoyk.Shop.goodsMage()'><b>goodsMage</b><br>Test class: demoyk.Shop<br>Parameters: 一本很好书, 图书, 少儿, 0-2岁, 231, 231</td>
+<td></td>
+<td>27</td>
+<td>demoyk.Shop@c818063</td></tr>
+<tr>
+<td title='jinmingming.Click.jilu()'><b>jilu</b><br>Test class: jinmingming.Click<br>Test method: 发放记录</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='jinmingming.Click.kanjiaguanli()'><b>kanjiaguanli</b><br>Test class: jinmingming.Click<br>Test method: 砍价管理</td>
+<td></td>
+<td>3</td>
+<td>jinmingming.Click@66d33a</td></tr>
+<tr>
+<td title='demoyk.Setting.messageList()'><b>messageList</b><br>Test class: demoyk.Setting<br>Parameters: user001, 1336408145@qq.com, 123321, 超级管理员</td>
+<td></td>
+<td>32</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.messageList()'><b>messageList</b><br>Test class: demoyk.Setting<br>Parameters: user003, 2945000672@qq.com, 123321, 仓管员</td>
+<td></td>
+<td>32</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.setArea()'><b>setArea</b><br>Test class: demoyk.Setting<br>Parameters: 桥西</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.setArea()'><b>setArea</b><br>Test class: demoyk.Setting<br>Parameters: 石家庄</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.setArea()'><b>setArea</b><br>Test class: demoyk.Setting<br>Parameters: 和平路</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.setArea()'><b>setArea</b><br>Test class: demoyk.Setting<br>Parameters: 河北师大</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.setArea()'><b>setArea</b><br>Test class: demoyk.Setting<br>Parameters: ***</td>
+<td></td>
+<td>22</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.system()'><b>system</b><br>Test class: demoyk.Setting<br>Parameters: 管理员2, 商品中心, Ad</td>
+<td></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.system()'><b>system</b><br>Test class: demoyk.Setting<br>Parameters: 管理员3, 会员中心, Api</td>
+<td></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.system()'><b>system</b><br>Test class: demoyk.Setting<br>Parameters: 管理员4, 用户中心, Base</td>
+<td></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='demoyk.Setting.system()'><b>system</b><br>Test class: demoyk.Setting<br>Parameters: 管理员5, 文章功能, Block</td>
+<td></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticleFail()'><b>test_AddArticleFail</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 错误数据<br>Parameters: abc123, 3, 1234, 1234, 1, abc123</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticleFail()'><b>test_AddArticleFail</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 错误数据<br>Parameters: abc123, 3, 1234, 1234, 1, 分类名不能重复</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticlePass()'><b>test_AddArticlePass</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 正确<br>Parameters: 1234, 3, 1234, 1234, 0</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticlePass()'><b>test_AddArticlePass</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 正确<br>Parameters: 1, 4, 1, 1, 1</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticlePass()'><b>test_AddArticlePass</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 正确<br>Parameters: abc, 5, abc, abc, 14</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_AddArticlePass()'><b>test_AddArticlePass</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 新增文章分类 正确<br>Parameters: 123qqwx, 6, 123qqwx, 123qqwx, 10</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 自然, 98, 旅游</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 清新, 99, 鲜花</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 复古风, 87, 家居</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: muji, 88, 家居</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: abc, 12, 教育</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 李宁, 27, 运动</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 沃尔玛, 66, 超市</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddIndustry()'><b>test_AddIndustry</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增行业<br>Parameters: 美容, 70, 美容</td>
+<td></td>
+<td>3</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkBottom()'><b>test_AddLinkBottom</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增底部导航<br>Parameters: bottom, 测试文章, 10</td>
+<td></td>
+<td>7</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkBottom()'><b>test_AddLinkBottom</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增底部导航<br>Parameters: bottom, [首届]四川海峡两岸摄影家大会新闻发布会发言稿, 20</td>
+<td></td>
+<td>7</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkBottom()'><b>test_AddLinkBottom</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增底部导航<br>Parameters: bottom, 暨首届海峡两岸摄影家摄影展, 30</td>
+<td></td>
+<td>7</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkTop()'><b>test_AddLinkTop</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增顶部 导航<br>Parameters: top, 促销活动, 5</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkTop()'><b>test_AddLinkTop</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增顶部 导航<br>Parameters: top, 店铺街, 3</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_AddLinkTop()'><b>test_AddLinkTop</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 新增顶部 导航<br>Parameters: top, 搜豹网络官网, 9</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面-页面管理-模板分类管理</td>
+<td></td>
+<td>10</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 首页装修, 自定义页面管理</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 模板分类管理, 行业及风格分类</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 自定义页面, 商业用途</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 会员中心自定义,  个人中心设置</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 模板切换, 模板管理</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: PC端导航栏, 自定义导航栏管理</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 文章列表, 文章管理</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面管理左侧导航栏的点击<br>Parameters: 新闻列表, 新闻管理</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_Click01()'><b>test_Click01</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 页面-内容管理-文章列表</td>
+<td></td>
+<td>9</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Click02()'><b>test_Click02</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 页面-页面管理-PC端导航栏</td>
+<td></td>
+<td>6</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.PageManage.test_Page()'><b>test_Page</b><br>Test class: wxpBackgroundPage.PageManage<br>Test method: 后台登录</td>
+<td></td>
+<td>7</td>
+<td>wxpBackgroundPage.PageManage@75bd9247</td></tr>
+<tr>
+<td title='wxpBackgroundPage.ContentManage.test_Page()'><b>test_Page</b><br>Test class: wxpBackgroundPage.ContentManage<br>Test method: 后台登录</td>
+<td></td>
+<td>7</td>
+<td>wxpBackgroundPage.ContentManage@7d417077</td></tr>
+<tr>
+<td title='demoyk.Setting.userMasg()'><b>userMasg</b><br>Test class: demoyk.Setting<br>Parameters: xxx, 这个是个xxx</td>
+<td></td>
+<td>36</td>
+<td>demoyk.Setting@3f0ee7cb</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: title, 20, 40, 30</td>
+<td></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ptitle0, 75, 40, 30</td>
+<td></td>
+<td>13</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ptitle1, 76, 40, 30</td>
+<td></td>
+<td>13</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ntitle0, 20, 100, 30</td>
+<td></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: ntitle1, 20, 101, 30</td>
+<td></td>
+<td>13</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: vtitle0, 20, 20, 20</td>
+<td></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao2.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao2<br>Test method: 团购<br>Parameters: vtitle2, 20, 20, 0</td>
+<td></td>
+<td>20</td>
+<td>jinmingming.ChangYongCuXiao2@7e0babb1</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: name0, 90, 20</td>
+<td></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: 100, 90, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T1, 101, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T2, 0, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: nname0, 90, 100</td>
+<td></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: nname1, 90, 101</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: nname2, 90, 0</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao()'><b>yingxiao</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销的时间<br>Parameters: ename0, 90, 20, 2019-12-30 10:00:00, 2019-12-28 10:00:00</td>
+<td></td>
+<td>28</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: title, 20, 20, 10</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: bob, 20, 20, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: a1, 75, 20, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: a2, 76, 20, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: a3, 0, 20, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: b1, 20, 100, 10</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: b2, 20, 101, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: b3, 20, 0, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: b4, 20, -1, 10</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: c1, 20, 20, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: c2, 20, 20, 21</td>
+<td></td>
+<td>22</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao1.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao1<br>Test method: 抢购<br>Parameters: c3, 20, 20, 0</td>
+<td></td>
+<td>19</td>
+<td>jinmingming.ChangYongCuXiao1@7cf10a6f</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: name1, 10, 20</td>
+<td></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T23, 0, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao1()'><b>yingxiao1</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T24, -1, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao2()'><b>yingxiao2</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: name2, 10, 20</td>
+<td></td>
+<td>33</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao2()'><b>yingxiao2</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T33, 0, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.ChangYongCuXiao3.yingxiao2()'><b>yingxiao2</b><br>Test class: jinmingming.ChangYongCuXiao3<br>Test method: 优惠促销<br>Parameters: T34, -1, 20</td>
+<td></td>
+<td>26</td>
+<td>jinmingming.ChangYongCuXiao3@6debcae2</td></tr>
+<tr>
+<td title='jinmingming.youhiujuan1.youhiujuan()'><b>youhiujuan</b><br>Test class: jinmingming.youhiujuan1</td>
+<td></td>
+<td>43</td>
+<td>jinmingming.youhiujuan1@2ff4f00f</td></tr>
+<tr>
+<td title='jinmingming.Click.yushouguanli()'><b>yushouguanli</b><br>Test class: jinmingming.Click<br>Test method: 预售管理</td>
+<td></td>
+<td>14</td>
+<td>jinmingming.Click@66d33a</td></tr>
+</table><p>
+</body>
+</html>

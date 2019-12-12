@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.webtest.core.ApiListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="yjp.AddAddress"/>
+      <class name="yjp.Evaluation"/>
+      <class name="yjp.Information"/>
+      <class name="yjp.Notice"/>
+      <class name="yjp.SecuritySet"/>
+      <class name="yjp.AddressMag"/>
+      <class name="yjp.MyOrder"/>
+      <class name="yjp.VirtualOrder"/>
+      <class name="yjp.Distribution"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="yjp.Notice">
+        <methods>
+          <include name="setup"/>
+          <include name="doAfterMethod"/>
+          <include name="details"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.Notice -->
+      <class name="yjp.Distribution">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="invitation"/>
+          <include name="rebate"/>
+          <include name="setup"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.Distribution -->
+      <class name="yjp.SecuritySet">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="ModifyPswVerifCode_Fail"/>
+          <include name="phoneCheck"/>
+          <include name="changePsw_Success"/>
+          <include name="setup"/>
+          <include name="mailtest"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.SecuritySet -->
+      <class name="yjp.Information">
+        <methods>
+          <include name="modify_Name" invocation-numbers="1 2 7"/>
+          <include name="doAfterMethod"/>
+          <include name="modify_Img" invocation-numbers="0"/>
+          <include name="modify_Success"/>
+          <include name="setup"/>
+          <include name="modify_Birthday" invocation-numbers="1 2 3 4"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.Information -->
+      <class name="yjp.MyOrder">
+        <methods>
+          <include name="Enquiry_Fail1" invocation-numbers="3"/>
+          <include name="cancelOrder1"/>
+          <include name="doAfterMethod"/>
+          <include name="setup"/>
+          <include name="doBeforeClass"/>
+          <include name="Enquiry_Order" invocation-numbers="0 1 2 3"/>
+          <include name="cancelDetail"/>
+        </methods>
+      </class> <!-- yjp.MyOrder -->
+      <class name="yjp.Evaluation">
+        <methods>
+          <include name="setup"/>
+          <include name="doAfterMethod"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.Evaluation -->
+      <class name="yjp.AddAddress">
+        <methods>
+          <include name="addAddress_Fail1" invocation-numbers="1 2 3"/>
+          <include name="doAfterMethod"/>
+          <include name="setup"/>
+          <include name="doBeforeClass"/>
+          <include name="addAddress_Fail2" invocation-numbers="3 6"/>
+        </methods>
+      </class> <!-- yjp.AddAddress -->
+      <class name="yjp.VirtualOrder">
+        <methods>
+          <include name="OrderDetail"/>
+          <include name="selectOrder"/>
+          <include name="setup"/>
+          <include name="doAfterMethod"/>
+          <include name="cancelOrder"/>
+          <include name="Enquiry_Fail"/>
+          <include name="assessOrder_Fail2"/>
+          <include name="doBeforeClass"/>
+          <include name="assessOrder_Fail1"/>
+        </methods>
+      </class> <!-- yjp.VirtualOrder -->
+      <class name="yjp.AddressMag">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="setup"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- yjp.AddressMag -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
