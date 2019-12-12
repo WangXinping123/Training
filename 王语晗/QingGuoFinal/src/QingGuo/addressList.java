@@ -11,12 +11,10 @@ import net.sf.json.JSONObject;
 
 public class addressList {
 	String address_url="/fgadmin/address/list";
-	String url="http://localhost:8888/fgadmin/address/list";
 	Checker checker=null;
 	@Test(priority=1)
 	public void addressList() throws Exception{
 		JSONObject data=new JSONObject();
-		//data.element("login", 1);
 		//CookieStore cookie=Common.getCookie("200000000065", "netease123");
 		String result=HttpDriver.doGet(address_url,"login=true");
 		System.out.println(result);
@@ -26,9 +24,9 @@ public class addressList {
 	
 	@Test(priority=2)
 	public void wrongAddressList() throws Exception{
-		String result=HttpDriver.doGet(address_url);
+		String result=HttpDriver.doGet(address_url,"login=false");
 		System.out.println(result);
 		checker=new Checker(result);
-		checker.verifyXpath("message", "fail");
+		checker.verifyXpath("code", "400");
 	}
 }

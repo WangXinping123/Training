@@ -14,3 +14,8 @@
 [FATAL] 2019-12-12 09:08:39,352 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :Required request body is missing: public net.sf.json.JSONObject com.example.demo.AddressList.getByJSON(net.sf.json.JSONObject); expected Value is :fail
 [FATAL] 2019-12-12 09:28:29,610 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :Required String parameter 'jsonParam' is not present; expected Value is :success
 [FATAL] 2019-12-12 09:28:29,630 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :Required String parameter 'jsonParam' is not present; expected Value is :fail
+[FATAL] 2019-12-12 09:56:19,995 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :Required String parameter 'jsonParam' is not present; expected Value is :success
+[FATAL] 2019-12-12 09:56:20,059 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :Required String parameter 'jsonParam' is not present; expected Value is :fail
+[FATAL] 2019-12-12 10:04:11,872 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :fail
+[FATAL] 2019-12-12 10:06:45,936 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :fail
+[FATAL] 2019-12-12 10:08:22,795 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :fail
