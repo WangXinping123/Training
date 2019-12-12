@@ -1,8 +1,11 @@
 package tp_shop;
 
+
 import java.lang.invoke.LambdaConversionException;
 
+import org.apache.poi.hssf.record.cf.Threshold;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,29 +14,32 @@ import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.utils.ReadProperties;
 
 public class shop extends BaseTest{
-	String url="http://localhost:9090/Home/Index/index.html";
+	String url="http://localhost:8036/Home/Index/index.html";
 	@DataProvider(name = "tp_shop")
 	public Object[][] getExcelData2() throws Exception {
 		return new ExcelDataProvider().getTestDataByExcel(
 				ReadProperties.getPropertyValue("data_path")+"tp_shop.xlsx", "Sheet1");
 	}
 
-	@Test(priority=1,dataProvider="tp_shop")
-	public void register1(String username,String verify_code,String password,String password2,String invite) throws InterruptedException{
-		//´ò¿ªÍøÒ³
+	@Test(priority=1,dataProvider="tp_shop",description="æ³¨å†Œ æ‰‹æœºå· æˆåŠŸ")
+	public void register1(String username,String verify_code,
+			String password,String password2,String invite) throws InterruptedException{
 		webtest.open(url);
-				
-		//ÊÖ»ú×¢²á
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[2]");
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
+		webtest.click("link=æ³¨å†Œ");
 		webtest.type("name=username", username);
 		webtest.type("name=verify_code", verify_code);
 		webtest.type("id=password", password);
 		webtest.type("id=password2", password2);
 		webtest.type("name=invite", invite);
 		webtest.click("xpath=//*[@id='reg_form2']/div/div/div/div[6]/div/a");
-		Thread.sleep(1000);
-		webtest.click("xpath=/html/body/div[1]/div/div/div/div[2]/a[2]");
-		//Assert.assertTrue(getDriver().getPageSource().contains(username));
+		Thread.sleep(2000);
+		AssertJUnit.assertTrue(getDriver().getPageSource().contains("é€€å‡º"));
+		Thread.sleep(2000);
 	}
 	
 	@DataProvider(name = "tp_shop_mail")
@@ -42,13 +48,16 @@ public class shop extends BaseTest{
 				ReadProperties.getPropertyValue("data_path")+"tp_shop_mail.xlsx", "Sheet1");
 	}
 	
-	@Test(priority=1,dataProvider="tp_shop_mail")
+	@Test(priority=2,dataProvider="tp_shop_mail",description="æ³¨å†Œ é‚®ç®± æˆåŠŸ")
 	public void register2(String username,String verify_code,String password,String password2,String invite) throws InterruptedException{
-		//´ò¿ªÍøÒ³
 		webtest.open(url);
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
 				
-		//ÓÊÏä×¢²á
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[2]");
+		webtest.click("link=æ³¨å†Œ");
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[1]/div/ul/li[2]/a");
 		webtest.type("name=username", username);
@@ -58,7 +67,8 @@ public class shop extends BaseTest{
 		webtest.type("name=invite", invite);
 		webtest.click("xpath=//*[@id='reg_form2']/div/div/div/div[6]/div/a");
 		Thread.sleep(1000);
-		webtest.click("xpath=/html/body/div[1]/div/div/div/div[2]/a[2]");
+		Assert.assertTrue(getDriver().getPageSource().contains("å®‰å…¨é€€å‡º"));
+		Thread.sleep(1000);
 	}
 	
 	@DataProvider(name = "tp_shop_wrong_tel")
@@ -67,13 +77,16 @@ public class shop extends BaseTest{
 				ReadProperties.getPropertyValue("data_path")+"tp_shop_wrong_tel.xlsx", "Sheet1");
 	}
 	
-	@Test(priority=1,dataProvider="tp_shop_wrong_tel")
-	public void wrongRegister(String username,String verify_code,String password,String password2,String invite) throws InterruptedException{
-		//´ò¿ªÍøÒ³
+	@Test(priority=5,dataProvider="tp_shop_wrong_tel",description="æ³¨å†Œé”™è¯¯æ‰‹æœºå·")
+	public void wrongRegister(String username,String verify_code,String password,String password2,
+			String invite,String result) throws InterruptedException{
 		webtest.open(url);
-		
-		//ÊÖ»ú×¢²á
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[2]");
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
+		webtest.click("link=æ³¨å†Œ");
 		webtest.type("name=username", username);
 		webtest.type("name=verify_code", verify_code);
 		webtest.type("id=password", password);
@@ -81,7 +94,10 @@ public class shop extends BaseTest{
 		webtest.type("name=invite", invite);
 		webtest.click("xpath=//*[@id='reg_form2']/div/div/div/div[6]/div/a");
 		Thread.sleep(1000);
-		webtest.click("xpath=/html/body/div[1]/div/div/div/div[2]/a[2]");
+//		webtest.click("xpath=/html/body/div[1]/div/div/div/div[2]/a[2]");
+		Thread.sleep(1000);
+		Assert.assertTrue(webtest.isTextPresent(result));
+
 	}
 	
 	@DataProvider(name = "tp_shop_wrong_mail")
@@ -90,13 +106,16 @@ public class shop extends BaseTest{
 				ReadProperties.getPropertyValue("data_path")+"tp_shop_wrong_mail.xlsx", "Sheet1");
 	}
 	
-	@Test(priority=1,dataProvider="tp_shop_wrong_mail")
-	public void wrongRegister2(String username,String verify_code,String password,String password2,String invite) throws InterruptedException{
-		//´ò¿ªÍøÒ³
+	@Test(priority=10,dataProvider="tp_shop_wrong_mail",description="æ³¨å†Œé”™è¯¯é‚®ç®±")
+	public void wrongRegister2(String username,String verify_code,
+			String password,String password2,String invite,String result) throws InterruptedException{
 		webtest.open(url);
-				
-		//ÓÊÏä×¢²á
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[2]");
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
+		webtest.click("link=æ³¨å†Œ");
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[1]/div/ul/li[2]/a");
 		webtest.type("name=username", username);
@@ -106,7 +125,7 @@ public class shop extends BaseTest{
 		webtest.type("name=invite", invite);
 		webtest.click("xpath=//*[@id='reg_form2']/div/div/div/div[6]/div/a");
 		Thread.sleep(1000);
-		webtest.click("xpath=/html/body/div[1]/div/div/div/div[2]/a[2]");
+		Assert.assertTrue(webtest.isTextPresent(result));
 	}
 	
 	@DataProvider(name = "tp_shop_login")
@@ -115,16 +134,22 @@ public class shop extends BaseTest{
 				ReadProperties.getPropertyValue("data_path")+"tp_shop_login.xlsx", "Sheet1");
 	}
 	
-	@Test(priority=2,dataProvider="tp_shop_login")
+	@Test(priority=12,dataProvider="tp_shop_login")
 	public void login(String username,String password,String verify_code) throws InterruptedException{
-		//´ò¿ªÍøÒ³
 		webtest.open(url);
-		//µÇÂ¼
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[1]");
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
+		Thread.sleep(1000);
+		webtest.click("link=ç™»å½•");
 		webtest.type("name=username", username);
 		webtest.type("name=password", password);
 		webtest.type("name=verify_code", verify_code);
 		webtest.click("xpath=//*[@id='loginform']/div/div[6]/a");
+		Thread.sleep(1000);
+		Assert.assertTrue(getDriver().getPageSource().contains("é€€å‡º"));
 	}
 	
 	@DataProvider(name = "tp_shop_wrong_login")
@@ -133,54 +158,79 @@ public class shop extends BaseTest{
 				ReadProperties.getPropertyValue("data_path")+"tp_shop_wrong_login.xlsx", "Sheet1");
 	}
 	
-	@Test(priority=2,dataProvider="tp_shop_wrong_login")
-	public void wrongLogin(String username,String password,String verify_code) throws InterruptedException{
-		//´ò¿ªÍøÒ³
+	@Test(priority=15,dataProvider="tp_shop_wrong_login")
+	public void wrongLogin(String username,String password,
+			String verify_code,String result) throws InterruptedException{
 		webtest.open(url);
-		//µÇÂ¼
-		webtest.click("xpath=/html/body/div[1]/div[1]/div/div/div[2]/a[1]");
+		if (getDriver().getPageSource().contains("å®‰å…¨é€€å‡º")) {
+			// é€€å‡ºç™»å½•
+			webtest.click("xpath=//a[contains(text(),'å®‰å…¨é€€å‡º')]");
+			Thread.sleep(2000);
+		}
+		webtest.click("link=ç™»å½•");
 		webtest.type("name=username", username);
 		webtest.type("name=password", password);
 		webtest.type("name=verify_code", verify_code);
 		webtest.click("xpath=//*[@id='loginform']/div/div[6]/a");
+		Thread.sleep(500);
+		Assert.assertTrue(webtest.isTextPresent(result));
 	}
 	
-	@Test(priority=3)
+	
+	@Test(priority=20)
 	public void deliver() throws InterruptedException{
-		//ËÍ»õÖÁ
+		webtest.open(url);
+		Thread.sleep(2000);
+		webtest.click("link=ç™»å½•");
+		webtest.type("name=username", "13800138006");
+		webtest.type("name=password", "123456");
+		webtest.type("name=verify_code", "1111");
+		webtest.click("xpath=//*[@id='loginform']/div/div[6]/a");
+		Thread.sleep(1000);
+		//é€è´§è‡³
 		webtest.click("xpath=/html/body/div[1]/div/div/div/div[1]/span[2]/ul/li/div/div/div[1]/b");
 		webtest.click("xpath=/html/body/div[1]/div/div/div/div[1]/span[2]/ul/li/div/div/div[2]/div/div[1]/ul/li[1]/a/em");
 		webtest.click("xpath=/html/body/div[1]/div/div/div/div[1]/span[2]/ul/li/div/div/div[2]/div/div[2]/ul/li[3]/a");
 		webtest.click("xpath=/html/body/div[1]/div/div/div/div[1]/span[2]/ul/li/div/div/div[2]/div/div[3]/ul/li[1]/a");
 		webtest.click("xpath=/html/body/div[1]/div/div/div/div[1]/span[2]/ul/li/div/div/div[2]/div/div[4]/ul/li[7]/a");
+		Assert.assertTrue(webtest.isTextPresent("åŒ—äº¬å¸‚"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=21)
 	public void possessionCenter1() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄÓÅ»İÈ¯-¶Ò»»ÓÅ»İÈ¯
-		//1.ÎÒµÄÓÅ»İÈ¯
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ä¼˜æƒ åˆ¸-å…‘æ¢ä¼˜æƒ åˆ¸
+		//1.æˆ‘çš„ä¼˜æƒ åˆ¸
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[2]/a");
-		//1-1¶Ò»»ÓÅ»İÈ¯
+		//1-1å…‘æ¢ä¼˜æƒ åˆ¸
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div/div/div[1]/span/a");
 		webtest.type("id=coupon_code","123456");
 		webtest.click("xpath=//*[@id='coupon_exchange']");
+		Assert.assertTrue(webtest.isTextPresent("ä¼˜æƒ åˆ¸ç ä¸å­˜åœ¨"));
+		Thread.sleep(5000);
+		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[3]/form/div[3]/div[1]");
+		Thread.sleep(500);
 	}
-	
-	@Test(priority=4)
+	String url2="http://localhost:8036/Home/user/index.html";
+	@Test(priority=24)
 	public void possessionCenter2() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄÓÅ»İÈ¯-ÁìÈ¡¸ü¶àÓÅ»İÈ¯
-		//1.ÎÒµÄÓÅ»İÈ¯
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ä¼˜æƒ åˆ¸-é¢†å–æ›´å¤šä¼˜æƒ åˆ¸
+		//1.æˆ‘çš„ä¼˜æƒ åˆ¸
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[2]/a");
-		//1-2ÁìÈ¡¸ü¶àÓÅ»İ
+		//1-2é¢†å–æ›´å¤šä¼˜æƒ 
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div/div/div[2]/span/a");
+		Assert.assertTrue(webtest.isTextPresent("å…¨éƒ¨å•†å“åˆ†ç±»"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=25)
 	public void possessionCenter3() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÕË»§Óà¶î-ÌáÏÖ
-		//2.ÕË»§Óà¶î
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-è´¦æˆ·ä½™é¢-æç°
+		//2.è´¦æˆ·ä½™é¢
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[3]/a");
-		//2-1ÌáÏÖ£¨Ö§¸¶±¦£©
+		//2-1æç°ï¼ˆæ”¯ä»˜å®ï¼‰
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div[2]/div[4]/a[1]");
 		webtest.click("xpath=/html/body/div[3]/div[1]/div[2]/div[2]/div/div[2]/form/div/dl/dd[1]/label");
 		webtest.click("xpath=/html/body/div[3]/div[1]/div[2]/div[2]/div/div[2]/form/div/div[1]/div[2]/div[3]/a");
@@ -190,112 +240,150 @@ public class shop extends BaseTest{
 		webtest.type("name=money", "888");
 		webtest.type("name=paypwd", "123456");
 		webtest.click("xpath=//*[@id='save_data']");
+		Assert.assertTrue(webtest.isTextPresent("è´¦æˆ·ä½™é¢"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=26)
 	public void possessionCenter4() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÕË»§Óà¶î-³äÖµ
-		//2.ÕË»§Óà¶î
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-è´¦æˆ·ä½™é¢-å……å€¼
+		//2.è´¦æˆ·ä½™é¢
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[3]/a");
-		//2-2³äÖµ
+		//2-2å……å€¼
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div[2]/div[4]/a[2]");
 		webtest.type("name=account", "888");
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[2]/div/div[2]/form/div/div[2]/div/div/dl/dd/div/div/ul/li[4]/div/input");
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[2]/div/div[2]/form/div/div[2]/div/div/div/a[2]");
+		Assert.assertTrue(webtest.isTextPresent("å•†ä¸šç”¨é€”"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=27)
 	public void possessionCenter5() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÕË»§Óà¶î-³äÖµ¼ÇÂ¼
-		//2.ÕË»§Óà¶î
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-è´¦æˆ·ä½™é¢-å……å€¼è®°å½•
+		//2.è´¦æˆ·ä½™é¢
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[3]/a");
-		//2-3³äÖµ¼ÇÂ¼
+		//2-3å……å€¼è®°å½•
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div[3]/ul/li[1]/a");
+		Assert.assertTrue(webtest.isTextPresent("å¾…æ”¯ä»˜"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=28)
 	public void possessionCenter6() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÕË»§Óà¶î-Ïû·Ñ¼ÇÂ¼
-		//2.ÕË»§Óà¶î
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-è´¦æˆ·ä½™é¢-æ¶ˆè´¹è®°å½•
+		//2.è´¦æˆ·ä½™é¢
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[3]/a");
-		//2-4Ïû·Ñ¼ÇÂ¼
+		//2-4æ¶ˆè´¹è®°å½•
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div[3]/ul/li[2]/a");
+		Assert.assertTrue(webtest.isTextPresent("ä¸‹å•æ¶ˆè´¹"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=30)
 	public void possessionCenter7() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÕË»§Óà¶î-ÌáÏÖ¼ÇÂ¼
-		//2.ÕË»§Óà¶î
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-è´¦æˆ·ä½™é¢-æç°è®°å½•
+		//2.è´¦æˆ·ä½™é¢
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[3]/a");
-		//2-5ÌáÏÖ¼ÇÂ¼
+		//2-5æç°è®°å½•
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div[1]/div[3]/ul/li[3]/a");
+		Assert.assertTrue(webtest.isTextPresent("å®¡æ ¸é€šè¿‡"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=34)
 	public void possessionCenter8() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄ»ı·Ö-»ı·Ö»»¹º
-		//3.ÎÒµÄ»ı·Ö
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ç§¯åˆ†-ç§¯åˆ†æ¢è´­
+		//3.æˆ‘çš„ç§¯åˆ†
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[4]/a");
-		//3-1»ı·Ö»»¹º
+		//3-1ç§¯åˆ†æ¢è´­
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[2]/div[1]/a");
 		webtest.click("xpath=/html/body/div[4]/div/div/div[3]/ul[1]/li[1]/div/div[2]/div/a");
 		webtest.click("xpath=//*[@id='buy_now']");
 		webtest.click("xpath=/html/body/div[12]/div/button");
+		Assert.assertTrue(webtest.isTextPresent("è®¢å•æäº¤æˆåŠŸ"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=36)
 	public void possessionCenter9() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄ»ı·Ö-»ı·ÖÃ÷Ï¸
-		//3.ÎÒµÄ»ı·Ö
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ç§¯åˆ†-ç§¯åˆ†æ˜ç»†
+		//3.æˆ‘çš„ç§¯åˆ†
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[4]/a");
-		//3-2»ı·ÖÃ÷Ï¸
+		//3-2ç§¯åˆ†æ˜ç»†
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/form/div[1]/ul/li[1]/a");
+		Assert.assertTrue(webtest.isTextPresent("ä¸‹å•æ¶ˆè´¹"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=38)
 	public void possessionCenter10() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄ»ı·Ö-»ı·ÖÀÛ¼Æ
-		//3.ÎÒµÄ»ı·Ö
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ç§¯åˆ†-ç§¯åˆ†ç´¯è®¡
+		//3.æˆ‘çš„ç§¯åˆ†
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[4]/a");
-		//3-3»ı·ÖÀÛ¼Æ
+		//3-3ç§¯åˆ†ç´¯è®¡
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/form/div[1]/ul/li[2]/a");
+		Assert.assertTrue(webtest.isTextPresent("ä¸‹å•èµ é€ç§¯åˆ†"));
 	}
 	
-	@Test(priority=4)
+	@Test(priority=40)
 	public void possessionCenter11() throws InterruptedException{
-		//×Ê²úÖĞĞÄ-ÎÒµÄ»ı·Ö-»ı·ÖÏû·Ñ
-		//3.ÎÒµÄ»ı·Ö
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//èµ„äº§ä¸­å¿ƒ-æˆ‘çš„ç§¯åˆ†-ç§¯åˆ†æ¶ˆè´¹
+		//3.æˆ‘çš„ç§¯åˆ†
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[2]/li[4]/a");
-		//3-4»ı·ÖÏû·Ñ
+		//3-4ç§¯åˆ†æ¶ˆè´¹
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/form/div[1]/ul/li[3]/a");
+		Assert.assertTrue(webtest.isTextPresent("ä¸‹å•æ¶ˆè´¹"));
+
 	}
 		
-	@Test(priority=4)
+	@Test(priority=41)
 	public void focusCenter1() throws InterruptedException{
-		//¹Ø×¢ÖĞĞÄ-ÎÒµÄÊÕ²Ø-É¾³ıÉÌÆ·
-		//1.ÎÒµÄÊÕ²Ø
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//å…³æ³¨ä¸­å¿ƒ-æˆ‘çš„æ”¶è—-åˆ é™¤å•†å“
+		//1.æˆ‘çš„æ”¶è—
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[3]/li[2]/a");
-		//1-1É¾³ıÉÌÆ·
+		//1-1åˆ é™¤å•†å“
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[5]/ul[1]/li[1]/input");
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[6]/div[2]/a");
+		Assert.assertTrue(webtest.isTextPresent("åˆ é™¤"));
+
 	}
 	
-	@Test(priority=4)
+	@Test(priority=42)
 	public void focusCenter2() throws InterruptedException{
-		//¹Ø×¢ÖĞĞÄ-ÎÒµÄÊÕ²Ø-²é¿´ÏêÇé
-		//1.ÎÒµÄÊÕ²Ø
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//å…³æ³¨ä¸­å¿ƒ-æˆ‘çš„æ”¶è—-æŸ¥çœ‹è¯¦æƒ…
+		//1.æˆ‘çš„æ”¶è—
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[3]/li[2]/a");
-		//1-2²é¿´ÏêÇé
+		//1-2æŸ¥çœ‹è¯¦æƒ…
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[5]/ul[2]/li[5]/div/a");
+		Assert.assertTrue(webtest.isTextPresent("å…¨éƒ¨å•†å“åˆ†ç±»"));
+
 	}
 	
-	@Test(priority=4)
+	@Test(priority=43)
 	public void focusCenter3() throws InterruptedException{
-		//¹Ø×¢ÖĞĞÄ-ÎÒµÄ×ã¼£-²é¿´ÏêÇé
-		//2.ÎÒµÄ×ã¼£
+		webtest.open(url2);
+		Thread.sleep(1000);
+		//å…³æ³¨ä¸­å¿ƒ-æˆ‘çš„è¶³è¿¹-æŸ¥çœ‹è¯¦æƒ…
+		//2.æˆ‘çš„è¶³è¿¹
 		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[1]/div/ul[3]/li[2]/a");
-		//2-1²é¿´ÏêÇé
-		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[2]/ul/li[3]/a");
+		//2-1æŸ¥çœ‹è¯¦æƒ…
+		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[2]/ul/li[4]/a");
+		webtest.click("xpath=/html/body/div[3]/div/div[2]/div[2]/div/div[4]/div/ul[1]/li/div[1]/div[1]/a/img");
+		Assert.assertTrue(webtest.isTextPresent("å…¨éƒ¨å•†å“åˆ†ç±»"));
 	}
 	
 }
