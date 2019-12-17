@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="55" passed="52">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6160" started-at="2019-12-17T06:02:59Z" finished-at="2019-12-17T06:03:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6160" started-at="2019-12-17T06:02:59Z" finished-at="2019-12-17T06:03:05Z">
+      <class name="interfacetest.Sumbit">
+        <test-method status="PASS" signature="NullLogin()[pri:0, instance:interfacetest.Sumbit@3d24753a]" name="NullLogin" duration-ms="33" started-at="2019-12-17T14:03:05Z" description="未登录" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NullLogin -->
+        <test-method status="PASS" signature="LoginFalse()[pri:1, instance:interfacetest.Sumbit@3d24753a]" name="LoginFalse" duration-ms="16" started-at="2019-12-17T14:03:05Z" description="登录失败" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFalse -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="21" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="25" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="24" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1334567845]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="20" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[133456784510]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="22" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="25" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="21" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[  ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="67" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[  ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method status="PASS" signature="submitTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:interfacetest.Sumbit@3d24753a]" name="submitTest" duration-ms="31" started-at="2019-12-17T14:03:05Z" description="登录成功" data-provider="data1" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13345678451]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[网商路 599 号 ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[  ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+      </class> <!-- interfacetest.Sumbit -->
+      <class name="interfacetest.TestaddressList">
+        <test-method status="PASS" signature="addressList()[pri:1, instance:interfacetest.TestaddressList@59a6e353]" name="addressList" duration-ms="10" started-at="2019-12-17T14:03:05Z" description="登录 查询地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressList -->
+        <test-method status="PASS" signature="wrongAddressList()[pri:2, instance:interfacetest.TestaddressList@59a6e353]" name="wrongAddressList" duration-ms="12" started-at="2019-12-17T14:03:05Z" description="未登录，查询地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongAddressList -->
+      </class> <!-- interfacetest.TestaddressList -->
+      <class name="interfacetest.Jktest">
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="41" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="FAIL" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="35" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[receiverName参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="32" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[cellPhone参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="20" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[addressDetail参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="21" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[571]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[province参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="20" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[571]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[city参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="17" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[571]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[area参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="FAIL" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="23" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[receiverName参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="21" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[cellPhone参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="18" started-at="2019-12-17T14:03:04Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678903]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[addressDetail参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="34" started-at="2019-12-17T14:03:05Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678904]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[province参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="20" started-at="2019-12-17T14:03:05Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678905]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[city参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="18" started-at="2019-12-17T14:03:05Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678906]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[area参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="PASS" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="20" started-at="2019-12-17T14:03:05Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678907]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[复旦大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[上海市]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[上海市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[黄埔区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[province参数类型不正确]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+        <test-method status="FAIL" signature="Tjaddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:interfacetest.Jktest@7e0ea639]" name="Tjaddress" duration-ms="19" started-at="2019-12-17T14:03:05Z" description="新增地址" data-provider="excel" finished-at="2019-12-17T14:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[张三]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678902]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[浙江大学]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[浙江省]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[杭州市]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[滨江区]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[请求参数不正确]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tjaddress -->
+      </class> <!-- interfacetest.Jktest -->
+      <class name="interfacetest.TestTransFree">
+        <test-method status="PASS" signature="test1()[pri:0, instance:interfacetest.TestTransFree@71be98f5]" name="test1" duration-ms="28" started-at="2019-12-17T14:03:05Z" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:interfacetest.TestTransFree@71be98f5]" name="test2" duration-ms="13" started-at="2019-12-17T14:03:05Z" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:interfacetest.TestTransFree@71be98f5]" name="test3" duration-ms="10" started-at="2019-12-17T14:03:05Z" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- interfacetest.TestTransFree -->
+      <class name="interfacetest.Login">
+        <test-method status="PASS" signature="testLoginSuccess()[pri:0, instance:interfacetest.Login@5b464ce8]" name="testLoginSuccess" duration-ms="2731" started-at="2019-12-17T14:02:59Z" description="登录" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method status="PASS" signature="testLoginWrongPwd()[pri:2, instance:interfacetest.Login@5b464ce8]" name="testLoginWrongPwd" duration-ms="13" started-at="2019-12-17T14:03:02Z" description="错误数据，密码错误" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPwd -->
+        <test-method status="PASS" signature="testLoginWrongPhone()[pri:3, instance:interfacetest.Login@5b464ce8]" name="testLoginWrongPhone" duration-ms="9" started-at="2019-12-17T14:03:02Z" description="错误数据，用户名错误" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPhone -->
+        <test-method status="PASS" signature="testLoginForWrongArea()[pri:4, instance:interfacetest.Login@5b464ce8]" name="testLoginForWrongArea" duration-ms="12" started-at="2019-12-17T14:03:02Z" description="错误数据，用户名或密码错误" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForWrongArea -->
+        <test-method status="PASS" signature="testLoginForNullNumber()[pri:5, instance:interfacetest.Login@5b464ce8]" name="testLoginForNullNumber" duration-ms="27" started-at="2019-12-17T14:03:02Z" description="用户名为空" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForNullNumber -->
+      </class> <!-- interfacetest.Login -->
+      <class name="interfacetest.TestDelete">
+        <test-method status="PASS" signature="testDelete1()[pri:1, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete1" duration-ms="8" started-at="2019-12-17T14:03:05Z" description="未登录状态下删除存在的指定id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete1 -->
+        <test-method status="PASS" signature="testDelete2()[pri:2, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete2" duration-ms="7" started-at="2019-12-17T14:03:05Z" description="删除错误不存在的id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete2 -->
+        <test-method status="PASS" signature="testDelete3()[pri:3, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete3" duration-ms="6" started-at="2019-12-17T14:03:05Z" description="未登录状态下删除指定id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete3 -->
+        <test-method status="PASS" signature="testDelete4()[pri:4, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete4" duration-ms="45" started-at="2019-12-17T14:03:05Z" description="删除格式错误的id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete4 -->
+        <test-method status="PASS" signature="testDelete5()[pri:5, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete5" duration-ms="13" started-at="2019-12-17T14:03:05Z" description="登录失败状态下删除存在的指定id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete5 -->
+        <test-method status="PASS" signature="testDelete6()[pri:6, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete6" duration-ms="15" started-at="2019-12-17T14:03:05Z" description="删除指定id的地址(存在的id)" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete6 -->
+        <test-method status="PASS" signature="testDelete7()[pri:7, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete7" duration-ms="24" started-at="2019-12-17T14:03:05Z" description="删除错误不存在的id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete7 -->
+        <test-method status="PASS" signature="testDelete8()[pri:8, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete8" duration-ms="15" started-at="2019-12-17T14:03:05Z" description="删除不指定id地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete8 -->
+        <test-method status="PASS" signature="testDelete9()[pri:9, instance:interfacetest.TestDelete@7a0ac6e3]" name="testDelete9" duration-ms="18" started-at="2019-12-17T14:03:05Z" description="删除格式错误的id的地址" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete9 -->
+      </class> <!-- interfacetest.TestDelete -->
+      <class name="interfacetest.SkuListInterfaceTest">
+        <test-method status="PASS" signature="getAll()[pri:0, instance:interfacetest.SkuListInterfaceTest@17c68925]" name="getAll" duration-ms="61" started-at="2019-12-17T14:03:02Z" description="获取所有商品的sku列表" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAll -->
+        <test-method status="PASS" signature="getFail1()[pri:0, instance:interfacetest.SkuListInterfaceTest@17c68925]" name="getFail1" duration-ms="11" started-at="2019-12-17T14:03:02Z" description="获取商品sku信息失败(超过int最大取值范围)" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFail1 -->
+        <test-method status="PASS" signature="getFail2()[pri:0, instance:interfacetest.SkuListInterfaceTest@17c68925]" name="getFail2" duration-ms="8" started-at="2019-12-17T14:03:02Z" description="获取goodsId不存在的商品失败" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFail2 -->
+        <test-method status="PASS" signature="getFail3()[pri:0, instance:interfacetest.SkuListInterfaceTest@17c68925]" name="getFail3" duration-ms="9" started-at="2019-12-17T14:03:02Z" description="goodsId类型不正确" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFail3 -->
+        <test-method status="PASS" signature="getGoodId()[pri:0, instance:interfacetest.SkuListInterfaceTest@17c68925]" name="getGoodId" duration-ms="13" started-at="2019-12-17T14:03:02Z" description="获取goodsId=1的商品sku信息" finished-at="2019-12-17T14:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGoodId -->
+      </class> <!-- interfacetest.SkuListInterfaceTest -->
+      <class name="interfacetest.SceneTest">
+        <test-method status="PASS" signature="testScene01()[pri:0, instance:interfacetest.SceneTest@6fadae5d]" name="testScene01" duration-ms="29" started-at="2019-12-17T14:03:05Z" description="浏览商品列表并查看商品详情" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScene01 -->
+        <test-method status="PASS" signature="testScene02()[pri:0, instance:interfacetest.SceneTest@6fadae5d]" name="testScene02" duration-ms="31" started-at="2019-12-17T14:03:05Z" description="登录，查询地址，计算运费，提交订单" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScene02 -->
+        <test-method status="PASS" signature="testScene03()[pri:0, instance:interfacetest.SceneTest@6fadae5d]" name="testScene03" duration-ms="63" started-at="2019-12-17T14:03:05Z" description="登录，查询地址，添加地址，计算运费，提交订单" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScene03 -->
+        <test-method status="PASS" signature="testScene04()[pri:0, instance:interfacetest.SceneTest@6fadae5d]" name="testScene04" duration-ms="27" started-at="2019-12-17T14:03:05Z" description="查询收货地址，计算运费，提交订单" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScene04 -->
+        <test-method status="PASS" signature="testScene05()[pri:0, instance:interfacetest.SceneTest@6fadae5d]" name="testScene05" duration-ms="46" started-at="2019-12-17T14:03:05Z" description="登录，查询，添加收货地址，计算运费，提交订单" finished-at="2019-12-17T14:03:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScene05 -->
+      </class> <!-- interfacetest.SceneTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

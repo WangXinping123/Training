@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>E:\Junior\demo\Qingguo\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 3 failed,   52 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确)">Tjaddress(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)">Tjaddress(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)">Tjaddress(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="LoginFalse">LoginFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="NullLogin">NullLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success)">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)">Tjaddress(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确)">Tjaddress(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确)">Tjaddress(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)">Tjaddress(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确)">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)">Tjaddress(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)">Tjaddress(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确)">Tjaddress(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确)">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确)">Tjaddress(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Jktest" hash-for-method="Tjaddress(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确)">Tjaddress(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestaddressList" hash-for-method="addressList">addressList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SkuListInterfaceTest" hash-for-method="getAll">getAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SkuListInterfaceTest" hash-for-method="getFail1">getFail1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SkuListInterfaceTest" hash-for-method="getFail2">getFail2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SkuListInterfaceTest" hash-for-method="getFail3">getFail3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SkuListInterfaceTest" hash-for-method="getGoodId">getGoodId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">submitTest(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 13345678451,     , 浙江省, 杭州市, 滨江区)">submitTest(张三, 13345678451,     , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   )">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区)">submitTest(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">submitTest(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">submitTest(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区)">submitTest(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区)">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Sumbit" hash-for-method="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestTransFree" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestTransFree" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestTransFree" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete1">testDelete1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete2">testDelete2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete3">testDelete3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete4">testDelete4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete5">testDelete5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete6">testDelete6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete7">testDelete7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete8">testDelete8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestDelete" hash-for-method="testDelete9">testDelete9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Login" hash-for-method="testLoginForNullNumber">testLoginForNullNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Login" hash-for-method="testLoginForWrongArea">testLoginForWrongArea</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Login" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Login" hash-for-method="testLoginWrongPhone">testLoginWrongPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.Login" hash-for-method="testLoginWrongPwd">testLoginWrongPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SceneTest" hash-for-method="testScene01">testScene01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SceneTest" hash-for-method="testScene02">testScene02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SceneTest" hash-for-method="testScene03">testScene03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SceneTest" hash-for-method="testScene04">testScene04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.SceneTest" hash-for-method="testScene05">testScene05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="interfacetest.TestaddressList" hash-for-method="wrongAddressList">wrongAddressList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">interfacetest.Jktest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确)</span>
+                  <div class="stack-trace">java.lang.Exception: expectedValue doesn&apos;t match actualValue,actual Value is :success; expected Value is :请求参数不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)">
+                  </a> <!-- Tjaddress(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</span>
+                  <div class="stack-trace">java.lang.Exception: expectedValue doesn&apos;t match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)">
+                  </a> <!-- Tjaddress(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</span>
+                  <div class="stack-trace">java.lang.Exception: expectedValue doesn&apos;t match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+	at com.edu.utils.Checker.verify(Checker.java:64)
+	at com.edu.utils.Checker.verifyXpath(Checker.java:47)
+	at interfacetest.Jktest.Tjaddress(Jktest.java:57)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.TestTransFree</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.Sumbit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFalse">
+                  </a> <!-- LoginFalse -->
+                  <span class="method-name">LoginFalse</span>
+                  <em>
+(登录失败)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NullLogin">
+                  </a> <!-- NullLogin -->
+                  <span class="method-name">NullLogin</span>
+                  <em>
+(未登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 13345678451,     , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, 13345678451,     , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 13345678451,     , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   )">
+                  </a> <!-- submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   ) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   )</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区)">
+                  </a> <!-- submitTest(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)">
+                  </a> <!-- submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区) -->
+                  <span class="method-name">submitTest</span>
+                  <span class="parameters">(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                  <em>
+(登录成功)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.SkuListInterfaceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAll">
+                  </a> <!-- getAll -->
+                  <span class="method-name">getAll</span>
+                  <em>
+(获取所有商品的sku列表)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFail1">
+                  </a> <!-- getFail1 -->
+                  <span class="method-name">getFail1</span>
+                  <em>
+(获取商品sku信息失败(超过int最大取值范围))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFail2">
+                  </a> <!-- getFail2 -->
+                  <span class="method-name">getFail2</span>
+                  <em>
+(获取goodsId不存在的商品失败)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFail3">
+                  </a> <!-- getFail3 -->
+                  <span class="method-name">getFail3</span>
+                  <em>
+(goodsId类型不正确)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getGoodId">
+                  </a> <!-- getGoodId -->
+                  <span class="method-name">getGoodId</span>
+                  <em>
+(获取goodsId=1的商品sku信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.Jktest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success)">
+                  </a> <!-- Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Tjaddress(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确)">
+                  </a> <!-- Tjaddress(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确) -->
+                  <span class="method-name">Tjaddress</span>
+                  <span class="parameters">(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确)</span>
+                  <em>
+(新增地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.SceneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScene01">
+                  </a> <!-- testScene01 -->
+                  <span class="method-name">testScene01</span>
+                  <em>
+(浏览商品列表并查看商品详情)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScene02">
+                  </a> <!-- testScene02 -->
+                  <span class="method-name">testScene02</span>
+                  <em>
+(登录，查询地址，计算运费，提交订单)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScene03">
+                  </a> <!-- testScene03 -->
+                  <span class="method-name">testScene03</span>
+                  <em>
+(登录，查询地址，添加地址，计算运费，提交订单)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScene04">
+                  </a> <!-- testScene04 -->
+                  <span class="method-name">testScene04</span>
+                  <em>
+(查询收货地址，计算运费，提交订单)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScene05">
+                  </a> <!-- testScene05 -->
+                  <span class="method-name">testScene05</span>
+                  <em>
+(登录，查询，添加收货地址，计算运费，提交订单)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.TestDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete1">
+                  </a> <!-- testDelete1 -->
+                  <span class="method-name">testDelete1</span>
+                  <em>
+(未登录状态下删除存在的指定id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete2">
+                  </a> <!-- testDelete2 -->
+                  <span class="method-name">testDelete2</span>
+                  <em>
+(删除错误不存在的id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete3">
+                  </a> <!-- testDelete3 -->
+                  <span class="method-name">testDelete3</span>
+                  <em>
+(未登录状态下删除指定id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete4">
+                  </a> <!-- testDelete4 -->
+                  <span class="method-name">testDelete4</span>
+                  <em>
+(删除格式错误的id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete5">
+                  </a> <!-- testDelete5 -->
+                  <span class="method-name">testDelete5</span>
+                  <em>
+(登录失败状态下删除存在的指定id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete6">
+                  </a> <!-- testDelete6 -->
+                  <span class="method-name">testDelete6</span>
+                  <em>
+(删除指定id的地址(存在的id))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete7">
+                  </a> <!-- testDelete7 -->
+                  <span class="method-name">testDelete7</span>
+                  <em>
+(删除错误不存在的id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete8">
+                  </a> <!-- testDelete8 -->
+                  <span class="method-name">testDelete8</span>
+                  <em>
+(删除不指定id地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete9">
+                  </a> <!-- testDelete9 -->
+                  <span class="method-name">testDelete9</span>
+                  <em>
+(删除格式错误的id的地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForNullNumber">
+                  </a> <!-- testLoginForNullNumber -->
+                  <span class="method-name">testLoginForNullNumber</span>
+                  <em>
+(用户名为空)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForWrongArea">
+                  </a> <!-- testLoginForWrongArea -->
+                  <span class="method-name">testLoginForWrongArea</span>
+                  <em>
+(错误数据，用户名或密码错误)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                  <em>
+(登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWrongPhone">
+                  </a> <!-- testLoginWrongPhone -->
+                  <span class="method-name">testLoginWrongPhone</span>
+                  <em>
+(错误数据，用户名错误)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWrongPwd">
+                  </a> <!-- testLoginWrongPwd -->
+                  <span class="method-name">testLoginWrongPwd</span>
+                  <em>
+(错误数据，密码错误)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">interfacetest.TestaddressList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addressList">
+                  </a> <!-- addressList -->
+                  <span class="method-name">addressList</span>
+                  <em>
+(登录 查询地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongAddressList">
+                  </a> <!-- wrongAddressList -->
+                  <span class="method-name">wrongAddressList</span>
+                  <em>
+(未登录，查询地址)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Junior\demo\Qingguo\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;interfacetest.Login&quot;/&gt;
+      &lt;class name=&quot;interfacetest.SkuListInterfaceTest&quot;/&gt;
+      &lt;class name=&quot;interfacetest.Jktest&quot;/&gt;
+      &lt;class name=&quot;interfacetest.Sumbit&quot;/&gt;
+      &lt;class name=&quot;interfacetest.TestaddressList&quot;/&gt;
+      &lt;class name=&quot;interfacetest.TestDelete&quot;/&gt;
+      &lt;class name=&quot;interfacetest.TestTransFree&quot;/&gt;
+      &lt;class name=&quot;interfacetest.SceneTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLoginSuccess')
+data.setCell(0, 2, 'interfacetest.Login')
+data.setCell(0, 3, 2731);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'submitTest')
+data.setCell(1, 2, 'interfacetest.Sumbit')
+data.setCell(1, 3, 67);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testScene03')
+data.setCell(2, 2, 'interfacetest.SceneTest')
+data.setCell(2, 3, 63);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getAll')
+data.setCell(3, 2, 'interfacetest.SkuListInterfaceTest')
+data.setCell(3, 3, 61);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testScene05')
+data.setCell(4, 2, 'interfacetest.SceneTest')
+data.setCell(4, 3, 46);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDelete4')
+data.setCell(5, 2, 'interfacetest.TestDelete')
+data.setCell(5, 3, 45);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Tjaddress')
+data.setCell(6, 2, 'interfacetest.Jktest')
+data.setCell(6, 3, 41);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Tjaddress')
+data.setCell(7, 2, 'interfacetest.Jktest')
+data.setCell(7, 3, 35);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Tjaddress')
+data.setCell(8, 2, 'interfacetest.Jktest')
+data.setCell(8, 3, 34);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'NullLogin')
+data.setCell(9, 2, 'interfacetest.Sumbit')
+data.setCell(9, 3, 33);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Tjaddress')
+data.setCell(10, 2, 'interfacetest.Jktest')
+data.setCell(10, 3, 32);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'submitTest')
+data.setCell(11, 2, 'interfacetest.Sumbit')
+data.setCell(11, 3, 31);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testScene02')
+data.setCell(12, 2, 'interfacetest.SceneTest')
+data.setCell(12, 3, 31);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testScene01')
+data.setCell(13, 2, 'interfacetest.SceneTest')
+data.setCell(13, 3, 29);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test1')
+data.setCell(14, 2, 'interfacetest.TestTransFree')
+data.setCell(14, 3, 28);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testScene04')
+data.setCell(15, 2, 'interfacetest.SceneTest')
+data.setCell(15, 3, 27);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLoginForNullNumber')
+data.setCell(16, 2, 'interfacetest.Login')
+data.setCell(16, 3, 27);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'submitTest')
+data.setCell(17, 2, 'interfacetest.Sumbit')
+data.setCell(17, 3, 25);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'submitTest')
+data.setCell(18, 2, 'interfacetest.Sumbit')
+data.setCell(18, 3, 25);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'submitTest')
+data.setCell(19, 2, 'interfacetest.Sumbit')
+data.setCell(19, 3, 24);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testDelete7')
+data.setCell(20, 2, 'interfacetest.TestDelete')
+data.setCell(20, 3, 24);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Tjaddress')
+data.setCell(21, 2, 'interfacetest.Jktest')
+data.setCell(21, 3, 23);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'submitTest')
+data.setCell(22, 2, 'interfacetest.Sumbit')
+data.setCell(22, 3, 22);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Tjaddress')
+data.setCell(23, 2, 'interfacetest.Jktest')
+data.setCell(23, 3, 21);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Tjaddress')
+data.setCell(24, 2, 'interfacetest.Jktest')
+data.setCell(24, 3, 21);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'submitTest')
+data.setCell(25, 2, 'interfacetest.Sumbit')
+data.setCell(25, 3, 21);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'submitTest')
+data.setCell(26, 2, 'interfacetest.Sumbit')
+data.setCell(26, 3, 21);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Tjaddress')
+data.setCell(27, 2, 'interfacetest.Jktest')
+data.setCell(27, 3, 20);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Tjaddress')
+data.setCell(28, 2, 'interfacetest.Jktest')
+data.setCell(28, 3, 20);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'submitTest')
+data.setCell(29, 2, 'interfacetest.Sumbit')
+data.setCell(29, 3, 20);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Tjaddress')
+data.setCell(30, 2, 'interfacetest.Jktest')
+data.setCell(30, 3, 20);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Tjaddress')
+data.setCell(31, 2, 'interfacetest.Jktest')
+data.setCell(31, 3, 20);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Tjaddress')
+data.setCell(32, 2, 'interfacetest.Jktest')
+data.setCell(32, 3, 19);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testDelete9')
+data.setCell(33, 2, 'interfacetest.TestDelete')
+data.setCell(33, 3, 18);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Tjaddress')
+data.setCell(34, 2, 'interfacetest.Jktest')
+data.setCell(34, 3, 18);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Tjaddress')
+data.setCell(35, 2, 'interfacetest.Jktest')
+data.setCell(35, 3, 18);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Tjaddress')
+data.setCell(36, 2, 'interfacetest.Jktest')
+data.setCell(36, 3, 17);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'LoginFalse')
+data.setCell(37, 2, 'interfacetest.Sumbit')
+data.setCell(37, 3, 16);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testDelete6')
+data.setCell(38, 2, 'interfacetest.TestDelete')
+data.setCell(38, 3, 15);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testDelete8')
+data.setCell(39, 2, 'interfacetest.TestDelete')
+data.setCell(39, 3, 15);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testLoginWrongPwd')
+data.setCell(40, 2, 'interfacetest.Login')
+data.setCell(40, 3, 13);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testDelete5')
+data.setCell(41, 2, 'interfacetest.TestDelete')
+data.setCell(41, 3, 13);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'getGoodId')
+data.setCell(42, 2, 'interfacetest.SkuListInterfaceTest')
+data.setCell(42, 3, 13);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'test2')
+data.setCell(43, 2, 'interfacetest.TestTransFree')
+data.setCell(43, 3, 13);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'wrongAddressList')
+data.setCell(44, 2, 'interfacetest.TestaddressList')
+data.setCell(44, 3, 12);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testLoginForWrongArea')
+data.setCell(45, 2, 'interfacetest.Login')
+data.setCell(45, 3, 12);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'getFail1')
+data.setCell(46, 2, 'interfacetest.SkuListInterfaceTest')
+data.setCell(46, 3, 11);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'test3')
+data.setCell(47, 2, 'interfacetest.TestTransFree')
+data.setCell(47, 3, 10);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'addressList')
+data.setCell(48, 2, 'interfacetest.TestaddressList')
+data.setCell(48, 3, 10);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'getFail3')
+data.setCell(49, 2, 'interfacetest.SkuListInterfaceTest')
+data.setCell(49, 3, 9);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testLoginWrongPhone')
+data.setCell(50, 2, 'interfacetest.Login')
+data.setCell(50, 3, 9);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'getFail2')
+data.setCell(51, 2, 'interfacetest.SkuListInterfaceTest')
+data.setCell(51, 3, 8);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testDelete1')
+data.setCell(52, 2, 'interfacetest.TestDelete')
+data.setCell(52, 3, 8);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testDelete2')
+data.setCell(53, 2, 'interfacetest.TestDelete')
+data.setCell(53, 3, 7);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testDelete3')
+data.setCell(54, 2, 'interfacetest.TestDelete')
+data.setCell(54, 3, 6);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWrongPwd</span>
+                <span class="method-start">2735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWrongPhone</span>
+                <span class="method-start">2757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginForWrongArea</span>
+                <span class="method-start">2767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginForNullNumber</span>
+                <span class="method-start">2779 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.SkuListInterfaceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAll</span>
+                <span class="method-start">2806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFail1</span>
+                <span class="method-start">2868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFail2</span>
+                <span class="method-start">2879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFail3</span>
+                <span class="method-start">2887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getGoodId</span>
+                <span class="method-start">2896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.Jktest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, success)</span>
+                <span class="method-start">4989 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tjaddress(123, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</span>
+                <span class="method-start">5032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678, 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</span>
+                <span class="method-start">5069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678901, 123, 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</span>
+                <span class="method-start">5101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678901, 浙江大学, 571, 杭州市, 滨江区, province参数类型不正确)</span>
+                <span class="method-start">5124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 571, 滨江区, city参数类型不正确)</span>
+                <span class="method-start">5145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678901, 浙江大学, 浙江省, 杭州市, 571, area参数类型不正确)</span>
+                <span class="method-start">5168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tjaddress(, 12345678901, 浙江大学, 浙江省, 杭州市, 滨江区, receiverName参数类型不正确)</span>
+                <span class="method-start">5186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, , 浙江大学, 浙江省, 杭州市, 滨江区, cellPhone参数类型不正确)</span>
+                <span class="method-start">5212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678903, , 浙江省, 杭州市, 滨江区, addressDetail参数类型不正确)</span>
+                <span class="method-start">5233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678904, 浙江大学, , 杭州市, 滨江区, province参数类型不正确)</span>
+                <span class="method-start">5253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678905, 浙江大学, 浙江省, , 滨江区, city参数类型不正确)</span>
+                <span class="method-start">5288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678906, 浙江大学, 浙江省, 杭州市, , area参数类型不正确)</span>
+                <span class="method-start">5308 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Tjaddress(张三, 12345678907, 复旦大学, 上海市, 上海市, 黄埔区, province参数类型不正确)</span>
+                <span class="method-start">5327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Tjaddress(张三, 12345678902, 浙江大学, 浙江省, 杭州市, 滨江区, 请求参数不正确)</span>
+                <span class="method-start">5349 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.Sumbit</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">NullLogin</span>
+                <span class="method-start">5369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginFalse</span>
+                <span class="method-start">5402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(   , 13345678451, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 1334567845, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 133456784510, 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, , 网商路 599 号 , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 13345678451,     , 浙江省, 杭州市, 滨江区)</span>
+                <span class="method-start">5553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 13345678451, 网商路 599 号 ,   , 杭州市, 滨江区)</span>
+                <span class="method-start">5579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省,   , 滨江区)</span>
+                <span class="method-start">5601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitTest(张三, 13345678451, 网商路 599 号 , 浙江省, 杭州市,   )</span>
+                <span class="method-start">5669 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.TestaddressList</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addressList</span>
+                <span class="method-start">5707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrongAddressList</span>
+                <span class="method-start">5718 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.TestDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDelete1</span>
+                <span class="method-start">5731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete2</span>
+                <span class="method-start">5740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete3</span>
+                <span class="method-start">5748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete4</span>
+                <span class="method-start">5755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete5</span>
+                <span class="method-start">5801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete6</span>
+                <span class="method-start">5814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete7</span>
+                <span class="method-start">5830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete8</span>
+                <span class="method-start">5855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDelete9</span>
+                <span class="method-start">5871 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.TestTransFree</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">5891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">5920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">5933 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">interfacetest.SceneTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testScene01</span>
+                <span class="method-start">5944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScene02</span>
+                <span class="method-start">5974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScene03</span>
+                <span class="method-start">6006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScene04</span>
+                <span class="method-start">6070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScene05</span>
+                <span class="method-start">6100 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

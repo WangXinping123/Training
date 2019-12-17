@@ -1,0 +1,225 @@
+[FATAL] 2019-09-17 22:26:43,667 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-17 22:26:43,672 com.edu.utils.Log - com.edu.test.SkuListTest@475530b9-TestSkuList1运行失败，需要截屏
+[FATAL] 2019-09-18 13:35:02,706 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:35:02,711 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1运行失败
+[FATAL] 2019-09-18 13:38:26,265 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:38:26,274 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1运行失败
+[FATAL] 2019-09-18 13:39:27,529 com.edu.utils.Log - the Text: 'message1' is not Present!
+[ERROR] 2019-09-18 13:39:27,534 com.edu.utils.Log - com.edu.test.SkuListTest@26be92ad-TestSkuList1运行失败
+[ERROR] 2019-12-12 15:33:09,708 com.edu.utils.Log - interfacetest.SceneTest@36d64342-testScene01运行失败
+[ERROR] 2019-12-12 17:03:55,340 com.edu.utils.Log - interfacetest.SceneTest@36d64342-testScene01运行失败
+[FATAL] 2019-12-12 17:43:49,196 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-12 17:44:59,131 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :No message available; expected Value is :success
+[FATAL] 2019-12-16 16:16:38,107 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,146 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,167 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,207 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,247 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,283 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,330 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,436 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,461 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,576 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,625 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,659 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,706 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,734 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,770 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,808 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,827 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,857 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,890 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:16:38,922 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :未登录; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,030 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,069 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,093 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,126 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,159 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,185 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,215 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,241 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,270 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,291 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,335 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,368 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,393 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,413 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,438 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,458 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,489 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,517 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,541 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:18:04,577 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-16 16:40:01,048 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 16:40:01,111 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数类型不正确
+[FATAL] 2019-12-16 16:40:01,131 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数类型不正确
+[FATAL] 2019-12-16 16:40:01,154 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数类型不正确
+[FATAL] 2019-12-16 16:40:01,180 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数类型不正确
+[FATAL] 2019-12-16 16:40:01,213 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 16:40:01,231 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 16:40:01,249 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 16:40:01,274 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数不存在
+[FATAL] 2019-12-16 16:40:01,299 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数不存在
+[FATAL] 2019-12-16 16:40:01,320 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数不存在
+[FATAL] 2019-12-16 16:40:01,363 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 16:40:01,387 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 16:40:01,404 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 16:40:01,421 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 16:40:01,447 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 16:40:01,467 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:03:41,207 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-16 19:03:41,214 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,280 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数类型不正确
+[ERROR] 2019-12-16 19:03:41,280 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,305 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数类型不正确
+[ERROR] 2019-12-16 19:03:41,305 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,332 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数类型不正确
+[ERROR] 2019-12-16 19:03:41,333 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,357 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数类型不正确
+[ERROR] 2019-12-16 19:03:41,357 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,377 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[ERROR] 2019-12-16 19:03:41,377 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,402 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[ERROR] 2019-12-16 19:03:41,402 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,451 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数不存在
+[ERROR] 2019-12-16 19:03:41,452 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,486 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数不存在
+[ERROR] 2019-12-16 19:03:41,487 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,517 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数不存在
+[ERROR] 2019-12-16 19:03:41,518 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,544 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数不存在
+[ERROR] 2019-12-16 19:03:41,544 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,597 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,597 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,627 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,627 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,663 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,664 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,692 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,693 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,717 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,718 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:03:41,743 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-16 19:03:41,743 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-16 19:15:08,467 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:15:08,535 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数类型不正确
+[FATAL] 2019-12-16 19:15:08,561 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数类型不正确
+[FATAL] 2019-12-16 19:15:08,597 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数类型不正确
+[FATAL] 2019-12-16 19:15:08,622 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数类型不正确
+[FATAL] 2019-12-16 19:15:08,651 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:15:08,673 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:15:08,706 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 19:15:08,739 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:15:08,768 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:15:08,797 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:15:08,838 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:15:08,875 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:15:08,901 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:15:08,923 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:15:08,955 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:15:08,983 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:28:59,774 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:28:59,840 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数类型不正确
+[FATAL] 2019-12-16 19:28:59,933 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数类型不正确
+[FATAL] 2019-12-16 19:28:59,973 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:29:00,019 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:29:00,052 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 19:29:00,108 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:29:00,166 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :city参数类型不正确; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:29:00,204 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:29:00,254 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:29:00,284 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:29:00,319 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:29:00,349 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:29:00,382 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:29:00,420 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:29:00,454 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:09,342 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:32:09,616 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数类型不正确
+[FATAL] 2019-12-16 19:32:09,646 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:32:09,678 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:32:09,751 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:32:09,801 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :city参数类型不正确; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:32:09,830 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:32:09,857 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:32:09,880 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:09,909 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:09,928 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:09,950 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:09,976 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:32:10,004 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:08,459 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:36:08,517 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :cellPhone参数类型不正确
+[FATAL] 2019-12-16 19:36:08,547 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :addressDetail参数类型不正确
+[FATAL] 2019-12-16 19:36:08,580 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :province参数类型不正确
+[FATAL] 2019-12-16 19:36:08,604 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :city参数类型不正确
+[FATAL] 2019-12-16 19:36:08,675 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:36:08,699 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:36:08,724 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 19:36:08,794 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:36:08,829 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:36:08,854 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:36:08,882 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:36:08,911 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:08,949 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:08,973 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:09,042 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:09,069 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:36:09,111 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,216 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:37:49,258 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :addressDetail参数类型不正确; expected Value is :cellPhone参数类型不正确
+[FATAL] 2019-12-16 19:37:49,360 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:37:49,381 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :addressDetail参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:37:49,404 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :addressDetail参数类型不正确; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 19:37:49,433 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:37:49,465 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :city参数类型不正确; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:37:49,485 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:37:49,516 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:37:49,543 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,568 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,589 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,617 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,643 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:37:49,672 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,064 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:39:48,214 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数不存在
+[FATAL] 2019-12-16 19:39:48,236 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :cellPhone参数类型不正确; expected Value is :cellPhone参数不存在
+[FATAL] 2019-12-16 19:39:48,263 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :addressDetail参数类型不正确; expected Value is :addressDetail参数不存在
+[FATAL] 2019-12-16 19:39:48,286 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :province参数不存在
+[FATAL] 2019-12-16 19:39:48,315 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :city参数类型不正确; expected Value is :city参数不存在
+[FATAL] 2019-12-16 19:39:48,343 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :area参数类型不正确; expected Value is :area参数不存在
+[FATAL] 2019-12-16 19:39:48,362 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:39:48,390 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,422 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,443 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,463 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,491 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:39:48,514 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,174 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:42:31,326 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:42:31,525 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:42:31,559 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,591 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,615 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,639 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,667 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:42:31,698 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:44:45,046 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:44:45,290 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:44:45,466 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :province参数类型不正确; expected Value is :success
+[FATAL] 2019-12-16 19:44:45,490 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-16 19:45:48,761 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:45:48,897 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[FATAL] 2019-12-16 19:45:49,037 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[FATAL] 2019-12-17 08:56:57,505 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-17 08:56:57,523 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-17 08:56:57,644 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-17 08:56:57,644 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-17 08:56:57,793 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-17 08:56:57,794 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-17 14:03:04,816 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-17 14:03:04,832 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-17 14:03:04,973 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-17 14:03:04,975 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-17 14:03:05,133 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-17 14:03:05,133 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败

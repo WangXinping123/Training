@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="interfacetest.Login"/>
+      <class name="interfacetest.SkuListInterfaceTest"/>
+      <class name="interfacetest.Jktest"/>
+      <class name="interfacetest.Sumbit"/>
+      <class name="interfacetest.TestaddressList"/>
+      <class name="interfacetest.TestDelete"/>
+      <class name="interfacetest.TestTransFree"/>
+      <class name="interfacetest.SceneTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="interfacetest.Jktest">
+        <methods>
+          <include name="Tjaddress" invocation-numbers="1 7 14"/>
+        </methods>
+      </class> <!-- interfacetest.Jktest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
