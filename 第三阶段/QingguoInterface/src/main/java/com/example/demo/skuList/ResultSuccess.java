@@ -2,7 +2,10 @@ package com.example.demo.skuList;
 
 import java.util.Map;
 
-
+/**
+ * @author 杨久鹏user
+ *
+ */
 public class ResultSuccess {
 	private int code;
 	private String message;

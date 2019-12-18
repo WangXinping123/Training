@@ -1,6 +1,10 @@
 package com.example.demo.skuList;
 
 
+/**
+ * @author 杨久鹏
+ *
+ */
 public class ResultFail {
 	private int code;
 	private String message;

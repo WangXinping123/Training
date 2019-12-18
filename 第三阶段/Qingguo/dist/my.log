@@ -223,3 +223,15 @@
 [ERROR] 2019-12-17 14:03:04,975 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
 [FATAL] 2019-12-17 14:03:05,133 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
 [ERROR] 2019-12-17 14:03:05,133 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:18:36,668 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-18 14:18:36,699 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:18:36,841 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-18 14:18:36,841 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:18:36,983 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-18 14:18:36,983 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:20:05,376 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-18 14:20:05,384 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:20:05,498 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :receiverName参数类型不正确
+[ERROR] 2019-12-18 14:20:05,499 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败
+[FATAL] 2019-12-18 14:20:05,615 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :请求参数不正确
+[ERROR] 2019-12-18 14:20:05,615 com.edu.utils.Log - interfacetest.Jktest@7e0ea639-Tjaddress运行失败

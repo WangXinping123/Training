@@ -17,8 +17,8 @@ import net.sf.json.JSONObject;
 /**
  * 项目名称：Qingguo   
  * 类名称：Login   
- * 类描述： 
- * @author wangxinping 
+ * 类描述： 登录
+ * @author 王欣平
  * 创建时间：2019年12月11日 下午5:44:07   
  * @version  
  */

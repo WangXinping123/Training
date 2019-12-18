@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import net.sf.json.JSONObject;
 
+/**
+ * @author 靳明明  提交订单
+ *
+ */
 @RestController
 public class SubmitPost {
 	@RestController

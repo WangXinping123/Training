@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import net.sf.json.JSONObject;
 
-
+/**
+ * @author 王欣平  登录
+ *
+ */
 @RestController
 @RequestMapping
 public class LoginController {

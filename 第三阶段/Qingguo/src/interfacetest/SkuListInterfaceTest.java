@@ -10,10 +10,8 @@ import com.edu.utils.Checker;
 /**
  * 项目名称：Qingguo   
  * 类名称：SkuListInterfaceTest   
- * 类描述： 
- * @author yangjiupeng
- * 创建时间：2019年12月16日 下午4:55:44   
- * @version  
+ * 类描述： 查询商品
+ * @author 杨久鹏
  */
 public class SkuListInterfaceTest extends HttpDriver{
 	Checker checker;

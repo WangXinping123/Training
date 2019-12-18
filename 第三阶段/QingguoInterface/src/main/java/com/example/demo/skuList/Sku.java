@@ -1,5 +1,8 @@
 package com.example.demo.skuList;
-
+/**
+ * @author 杨久鹏
+ *
+ */
 public class Sku {
 	private int goodId;
 	private String goodName;

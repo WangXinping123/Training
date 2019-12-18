@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+/**
+ * @author 杨久鹏  查询商品
+ *
+ */
 @RestController
 @RequestMapping("/common")
 public class SkuListController {

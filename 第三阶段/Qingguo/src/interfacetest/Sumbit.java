@@ -9,6 +9,14 @@ import com.edu.utils.Checker;
 
 import net.sf.json.JSONObject;
 
+/**
+ * 项目名称：Qingguo   
+ * 类名称：Sumbit 
+ * 类描述： 提交订单
+ * @author 靳明明 
+ * 创建时间：2019年12月18日 下午2:27:13   
+ * @version  
+ */
 public class Sumbit {
 	int i=0;
 	String submit_url = "/common/fgadmin/submit";

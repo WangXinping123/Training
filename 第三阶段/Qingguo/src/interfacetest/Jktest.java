@@ -16,10 +16,8 @@ import net.sf.json.JSONObject;
 /**
  * 项目名称：Qingguo   
  * 类名称：Jktest   
- * 类描述： 
- * @author 杨硕
- * 创建时间：2019年12月16日 下午4:41:10   
- * @version  
+ * 类描述： 添加地址
+ * @author 杨硕   
  */
 public class Jktest {
 	int i=0;

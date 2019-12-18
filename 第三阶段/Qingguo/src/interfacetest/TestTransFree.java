@@ -17,8 +17,8 @@ import com.edu.utils.Checker;
 /**
  * 项目名称：Qingguo   
  * 类名称：Demo1   
- * 类描述： 
- * @author yuankang
+ * 类描述： 查询运费
+ * @author 袁康
  * 创建时间：2019年12月11日 下午5:43:38   
  * @version  
  */

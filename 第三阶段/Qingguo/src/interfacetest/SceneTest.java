@@ -15,10 +15,13 @@ import com.edu.utils.Common;
 import net.sf.json.JSONObject;
 
 /**
- * 项目名称：Qingguo 类名称：SceneTest01 类描述： 场景测试
- * 
- * @author 创建时间：2019年12月11日 下午5:44:13
- * @version
+ * 项目名称：Qingguo 
+ * 类名称：SceneTest
+ * 类描述： 场景测试（5个场景）
+ * @author 
+ *  王欣平：场景1,2,5
+ *  靳明明：场景4，
+ *  李晓月：场景3
  */
 public class SceneTest {
 	String login_url = "/common/fgadmin/login";

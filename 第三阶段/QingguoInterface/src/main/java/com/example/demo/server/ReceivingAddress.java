@@ -1,5 +1,10 @@
 package com.example.demo.server;
 
+
+/**
+ * @author 杨硕 添加地址
+ *
+ */
 public class ReceivingAddress {
 	private Object receiverName;
 	private Object cellPhone;
