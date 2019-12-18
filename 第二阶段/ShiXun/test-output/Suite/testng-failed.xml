@@ -6,15 +6,6 @@
   </listeners>
   <test name="Test">
     <classes>
-      <class name="jinmingming.fenxiaoguanli1"/>
-      <class name="jinmingming.Click"/>
-      <class name="jinmingming.ChangYongCuXiao1"/>
-      <class name="jinmingming.ChangYongCuXiao2"/>
-      <class name="jinmingming.ChangYongCuXiao3"/>
-      <class name="jinmingming.ChangYongCuXiao4"/>
-      <class name="jinmingming.youhiujuan1"/>
-      <class name="demoyk.Shop"/>
-      <class name="demoyk.Setting"/>
       <class name="wxpBackgroundPage.PageManage"/>
       <class name="wxpBackgroundPage.ContentManage"/>
       <class name="lixiaoyue.Test_GongYingShang"/>
@@ -22,113 +13,37 @@
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
-      <class name="jinmingming.ChangYongCuXiao2">
+      <class name="lixiaoyue.Test_GongYingShang">
         <methods>
-          <include name="yingxiao" invocation-numbers="1 4 5 8 9 11 13"/>
+          <include name="Refund"/>
+          <include name="setup"/>
+          <include name="List"/>
+          <include name="Transfer"/>
           <include name="doAfterMethod"/>
-          <include name="aaa"/>
-          <include name="eTime" invocation-numbers="0"/>
+          <include name="Commodity"/>
+          <include name="GetPot" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
+          <include name="List2"/>
+          <include name="Settlement"/>
+          <include name="Goods"/>
+          <include name="Order"/>
           <include name="doBeforeClass"/>
+          <include name="Apply"/>
         </methods>
-      </class> <!-- jinmingming.ChangYongCuXiao2 -->
-      <class name="jinmingming.ChangYongCuXiao1">
-        <methods>
-          <include name="doAfterMethod"/>
-          <include name="yingxiao1" invocation-numbers="5 13"/>
-          <include name="yingxiao1" invocation-numbers="0"/>
-          <include name="aaa"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- jinmingming.ChangYongCuXiao1 -->
-      <class name="jinmingming.fenxiaoguanli1">
-        <methods>
-          <include name="doAfterMethod"/>
-          <include name="doBeforeClass"/>
-          <include name="aaa"/>
-        </methods>
-      </class> <!-- jinmingming.fenxiaoguanli1 -->
-      <class name="wxpBackgroundPage.ContentManage">
-        <methods>
-          <include name="doAfterMethod"/>
-          <include name="test_AddArticlePass" invocation-numbers="4"/>
-          <include name="doBeforeClass"/>
-          <include name="test_AddArticleFail" invocation-numbers="0 1 2"/>
-        </methods>
-      </class> <!-- wxpBackgroundPage.ContentManage -->
-      <class name="jinmingming.ChangYongCuXiao4">
-        <methods>
-          <include name="Time" invocation-numbers="0"/>
-          <include name="doAfterMethod"/>
-          <include name="aaa"/>
-          <include name="dingdancuxiao" invocation-numbers="3"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- jinmingming.ChangYongCuXiao4 -->
-      <class name="demoyk.Setting">
-        <methods>
-          <include name="userMasg" invocation-numbers="0"/>
-          <include name="testLogin"/>
-          <include name="userMasgNosys"/>
-          <include name="doAfterMethod"/>
-          <include name="systemNot"/>
-          <include name="delRole"/>
-          <include name="system" invocation-numbers="0"/>
-          <include name="messageList" invocation-numbers="1 3"/>
-          <include name="doBeforeClass"/>
-          <include name="goSetting"/>
-          <include name="addTra" invocation-numbers="2"/>
-        </methods>
-      </class> <!-- demoyk.Setting -->
-      <class name="jinmingming.Click">
-        <methods>
-          <include name="doAfterMethod"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- jinmingming.Click -->
+      </class> <!-- lixiaoyue.Test_GongYingShang -->
       <class name="wxpBackgroundPage.PageManage">
         <methods>
           <include name="doAfterMethod"/>
           <include name="doBeforeClass"/>
         </methods>
       </class> <!-- wxpBackgroundPage.PageManage -->
-      <class name="jinmingming.ChangYongCuXiao3">
+      <class name="wxpBackgroundPage.ContentManage">
         <methods>
           <include name="doAfterMethod"/>
-          <include name="yingxiao" invocation-numbers="7"/>
-          <include name="yingxiao" invocation-numbers="0"/>
-          <include name="yingxiao2" invocation-numbers="1 2"/>
-          <include name="yingxiao1" invocation-numbers="1 2"/>
+          <include name="test_AddArticlePass" invocation-numbers="1 2 3 4"/>
           <include name="doBeforeClass"/>
-          <include name="aaa"/>
+          <include name="test_AddArticleFail" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- jinmingming.ChangYongCuXiao3 -->
-      <class name="demoyk.Shop">
-        <methods>
-          <include name="goodsType" invocation-numbers="0 1 2"/>
-          <include name="testLogin"/>
-          <include name="goodsLabe" invocation-numbers="2"/>
-          <include name="typeDel"/>
-          <include name="doAfterMethod"/>
-          <include name="goSetting"/>
-          <include name="goodsMage" invocation-numbers="0 1 3 5 6"/>
-          <include name="branddel"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- demoyk.Shop -->
-      <class name="lixiaoyue.Test_GongYingShang">
-        <methods>
-          <include name="setup"/>
-          <include name="doAfterMethod"/>
-          <include name="GetPot" invocation-numbers="0 1 2 7 11"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- lixiaoyue.Test_GongYingShang -->
-      <class name="jinmingming.youhiujuan1">
-        <methods>
-          <include name="doAfterMethod"/>
-          <include name="doBeforeClass"/>
-        </methods>
-      </class> <!-- jinmingming.youhiujuan1 -->
+      </class> <!-- wxpBackgroundPage.ContentManage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

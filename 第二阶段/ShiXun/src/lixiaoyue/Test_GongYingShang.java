@@ -13,7 +13,12 @@ import org.testng.annotations.DataProvider;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.TxtDataProvider;
 import com.webtest.utils.ReadProperties;
-
+/**
+ * 项目名称：TPSHOP 类名称：Test_GongYingShang 类描述： 后台供应商相关测试
+ * 
+ * @author 李晓月     
+ * @version
+ */
 public class Test_GongYingShang extends BaseTest{
 	Base_login action;
 	@BeforeMethod

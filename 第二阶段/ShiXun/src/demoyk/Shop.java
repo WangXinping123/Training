@@ -7,7 +7,12 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.utils.ReadProperties;
-//@Listeners({ ApiListener.class})
+/**
+ * 项目名称：TPSHOP 类名称：Shop 类描述： 后台商城相关操作
+ * 
+ * @author 袁康      
+ * @version
+ */
 public class Shop extends Admin_Login{
 	
 	@BeforeMethod

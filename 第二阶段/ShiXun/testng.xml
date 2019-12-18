@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-    <classes>
+    <classes> 
       <!-- 靳明明 -->
-      <class name="jinmingming.fenxiaoguanli1"/>
+      <class name="jinmingming.FenXiao"/>
       <class name="jinmingming.Click"/>
       <class name="jinmingming.ChangYongCuXiao1"/>
       <class name="jinmingming.ChangYongCuXiao2"/>
       <class name="jinmingming.ChangYongCuXiao3"/>
       <class name="jinmingming.ChangYongCuXiao4"/>
-      <class name="jinmingming.youhiujuan1"/>
+      <class name="jinmingming.YouHiuJuan"/>
       <!-- 袁康 -->
 	  <class name="demoyk.Shop"/>
-	  <class name="demoyk.Setting"/> 
+	  <class name="demoyk.Setting"/>	
 	  <!-- 王欣平 -->
 	  <class name="wxpBackgroundPage.PageManage"/>
 	  <class name="wxpBackgroundPage.ContentManage"/>

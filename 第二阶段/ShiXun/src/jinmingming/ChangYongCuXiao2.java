@@ -1,7 +1,5 @@
 package jinmingming;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -9,8 +7,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import com.webtest.jinmingming.Action;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.TxtDataProvider;
+/**
+ * 项目名称：TPSHOP 类名称：ChangYongCuXiao2 类描述： 后台营销团购管理添加活动
+ * 
+ * @author 靳明明      
+ * @version
+ */
 public class ChangYongCuXiao2 extends BaseTest{
 	int i=0;
 	@BeforeClass

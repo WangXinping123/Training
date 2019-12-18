@@ -1,7 +1,12 @@
 package jinmingming;
 
 import com.webtest.core.WebDriverEngine;
-
+/**
+ * 项目名称：TPSHOP 类名称：Action 类描述： 后台登录操作
+ * 
+ * @author 靳明明      
+ * @version
+ */
 public class Action{ 
 
 	private  WebDriverEngine webtest;

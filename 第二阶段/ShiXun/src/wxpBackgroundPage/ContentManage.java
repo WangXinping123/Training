@@ -12,7 +12,12 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.utils.ReadProperties;
-
+/**
+ * 项目名称：TPSHOP 类名称：ContentManage 类描述： 页面管理的相关操作
+ * 
+ * @author 王欣平 创建时间：2019年12月4日 下午2:48:00
+ * @version
+ */
 public class ContentManage extends BaseTest {
 	@Test(priority = 1, description = "后台登录")
 	public void test_Page() {

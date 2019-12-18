@@ -1,8 +1,13 @@
-//2��
+//登录
 package lixiaoyue;
 
 import com.webtest.core.WebDriverEngine;
-
+/**
+ * 项目名称：TPSHOP 类名称：Base_login 类描述： 后台登录
+ * 
+ * @author 李晓月     
+ * @version
+ */
 public class Base_login{
 	private WebDriverEngine webtest;
 	  public Base_login(WebDriverEngine webtest) {

@@ -14,7 +14,7 @@ import com.webtest.utils.ReadProperties;
 /**
  * 项目名称：TPSHOP 类名称：PageManage 类描述： 页面管理的相关操作
  * 
- * @author wangxinping 创建时间：2019年12月4日 下午2:48:00
+ * @author 王欣平 创建时间：2019年12月4日 下午2:48:00
  * @version
  */
 public class PageManage extends BaseTest {

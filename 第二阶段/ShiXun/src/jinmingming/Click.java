@@ -4,7 +4,13 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.webtest.core.BaseTest;
-
+import com.webtest.jinmingming.Action;
+/**
+ * 项目名称：TPSHOP 类名称：Click 类描述： 后台营销点击显示“商业用途必须购买正版,使用盗版将追究法律责任”的操作
+ * 
+ * @author 靳明明      
+ * @version
+ */
 public class Click extends BaseTest{
 	@Test(priority=0,description = "预售管理")
 	public void yushouguanli() throws Exception{
