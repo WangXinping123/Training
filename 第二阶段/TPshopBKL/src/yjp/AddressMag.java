@@ -7,11 +7,13 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.demo.Front_login;
-
+/**
+ * 项目名称：TPSHOP    
+ * @author 杨久鹏 
+ *  地址管理
+ */
 public class AddressMag extends BaseTest {
-	/**
-	 * 地址管理
-	 */
+
 	static public String url = "http://localhost:8036/";
 
 	Login action;

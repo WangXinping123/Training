@@ -21,9 +21,11 @@ import com.webtest.demo.Front_login;
 import com.webtest.utils.ReadProperties;
 
 /**
- * 项目名称：TPSHOP 类名称：TestToPayAddAddress 类描述：
- * 
- * @author wangxinping 创建时间：2019年12月3日 上午9:21:01
+ * 项目名称：TPSHOP 
+ * 类名称：TestToPayAddAddress 
+ * 类描述：
+ * @author王欣平
+ *  创建时间：2019年12月3日 上午9:21:01
  * @version
  */
 //@Listeners(ApiListener.class)
@@ -139,9 +141,8 @@ public class TestToPayAddAddress extends BaseTest {
 	}
 	
 
-	@Test(priority = 40, description = "修改 发票 个人 商品明细")
+	@Test(dataProvider="receipt",priority = 40, description = "修改 发票 个人 商品明细")
 	public void test_fix_ReceiptPerson(String choice,String result) throws Exception {
-		AssertJUnit.assertTrue(getDriver().getPageSource().contains("购物车"));
 		webtest.click("link=修改");
 		Thread.sleep(50);
 		webtest.click("id=personage");
@@ -153,7 +154,6 @@ public class TestToPayAddAddress extends BaseTest {
 	
 //	@Test(priority = 41, description = "修改 发票 个人 商品类别")
 //	public void test_fix_ReceiptPerson2() throws Exception {
-//		AssertJUnit.assertTrue(getDriver().getPageSource().contains("购物车"));
 //		webtest.click("link=修改");
 //		Thread.sleep(50);
 //		webtest.click("id=personage");

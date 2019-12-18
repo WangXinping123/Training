@@ -3,13 +3,13 @@
 <suite name="Suite" verbose="1">
 	<test name="Test">
 		<classes>
-			<!-- <class name="wxp_ShoppingCart.TestCartWithoutLogin" />
+			<class name="wxp_ShoppingCart.TestCartWithoutLogin" />
 			<class name="wxp_ShoppingCart.TestAddCart" />
 			<class name="wxp_ShoppingCart.TestCart01" />
 			<class name="wxp_ShoppingCart.TestToPayAddAddress" />
 
 			<class name="lixiaoyue.Test_DingDan" />
-			<class name="lixiaoyue.Test_DiZhi" /> -->
+			<class name="lixiaoyue.Test_DiZhi" />
 
 			<class name="yjp.AddAddress" />
 			<class name="yjp.Evaluation" />
@@ -21,11 +21,11 @@
 			<class name="yjp.VirtualOrder" />
 			<class name="yjp.Distribution" />
 
-			<!-- <class name="shouye.ys.NewTest" />
-			<class name="shouye.ys.SYTest" />
 			<class name="shouye.ys.SyTestlogin" />
-			
-			<class name="wyh.shop" /> -->
+			<class name="shouye.ys.NewTest" />
+			<class name="shouye.ys.SYTest" />
+
+			<class name="wyh.shop" />
 
 		</classes>
 

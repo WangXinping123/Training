@@ -9,11 +9,12 @@ import org.testng.annotations.Test;
 import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
 import com.webtest.demo.Front_login;
-
+/**
+ * 杨久鹏
+ * 退货管理
+ */
 public class ReturnGoods extends BaseTest {
-	/**
-	 * 退货管理
-	 */
+	
 	static public String url = "http://localhost:8036/";
 
 	Login action;

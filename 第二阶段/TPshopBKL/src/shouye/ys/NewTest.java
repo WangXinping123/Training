@@ -11,7 +11,11 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.utils.ReadProperties;
-
+/**
+ * 项目名称：TPshopBKL   
+ * 搜索框
+ * @author 杨硕 
+ */
 public class NewTest  extends BaseTest{
 	@DataProvider(name = "excel")
 	public Object[][] getExcelDada() throws IOException {

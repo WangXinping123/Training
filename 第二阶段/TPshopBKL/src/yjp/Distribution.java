@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.demo.Front_login;
-
+/**
+ * 项目名称：TPSHOP     
+ * 类描述：分销中心(我的推广、我的收益)
+ * @author 杨久鹏
+ */
 public class Distribution extends BaseTest{
-	/**
-	 * 分销中心(我的推广、我的收益)
-	 */
 	static public String url="http://localhost:8036/";
 	
 	Login action;

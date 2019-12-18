@@ -24,7 +24,7 @@ import com.webtest.demo.Front_login;
 /**
  * 个人信息
  * 
- * @author yjp
+ * @author杨久鹏
  *
  */
 public class Information extends BaseTest {

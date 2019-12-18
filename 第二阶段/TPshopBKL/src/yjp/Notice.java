@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.core.WebTestListener;
 import com.webtest.demo.Front_login;
-
+/**
+ * 消息通知  杨久鹏
+ */
 public class Notice extends BaseTest {
-	/**
-	 * 消息通知
-	 */
+	
 	static public String url = "http://localhost:8036/";
 
 	Login action;

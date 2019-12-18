@@ -8,16 +8,13 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.demo.Front_login;
-
+/**
+ *  杨久鹏   虚拟订单
+ */
 public class VirtualOrder extends BaseTest {
-	/**
-	 * 虚拟订单
-	 */
 
 	static public String url = "http://localhost:8036/";
-
 	Login action;
-
 	@BeforeClass(description = "登录")
 	public void setup() throws Exception {
 		action = new Login(webtest);

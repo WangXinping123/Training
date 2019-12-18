@@ -14,11 +14,12 @@ import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.demo.Front_login;
-
+/**
+ * 项目名称：TPSHOP   
+ * @author 杨久鹏  
+ */
 public class AddAddress extends BaseTest{
-	/**
-	 * 添加地址
-	 */
+
 	static public String url="http://localhost:8036/";
 	
 	Login action;

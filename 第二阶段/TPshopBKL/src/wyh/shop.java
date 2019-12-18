@@ -12,7 +12,10 @@ import org.testng.annotations.Test;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
 import com.webtest.utils.ReadProperties;
-
+/**
+ * 登录，注册，送货至，资产中心，关注中心
+ * @author 王语晗 
+ */
 public class shop extends BaseTest{
 	String url="http://localhost:8036/Home/Index/index.html";
 	@DataProvider(name = "tp_shop")

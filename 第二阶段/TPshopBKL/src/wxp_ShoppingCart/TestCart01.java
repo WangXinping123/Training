@@ -21,7 +21,7 @@ import com.webtest.demo.Front_login;
  * 描述：点击去购物车结算，删除/收藏商品 添加商品，
  * 验证购物车内是否有这个商品
  * 
- * @author wangxinping 
+ * @author 王欣平
  * 创建时间：2019年11月29日 下午4:44:52
  * @version
  */

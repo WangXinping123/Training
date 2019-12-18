@@ -20,7 +20,7 @@ import com.webtest.demo.Front_login;
  * 项目名称：TPSHOP   
  * 类名称：TestCartWithoutLogin   
  * 类描述： 不登录时，查看购物车，加入购物车
- * @author wangxinping 
+ * @author 王欣平
  * 创建时间：2019年11月29日 下午4:27:26   
  * @version  
  */

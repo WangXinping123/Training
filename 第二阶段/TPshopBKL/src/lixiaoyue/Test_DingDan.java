@@ -30,6 +30,12 @@ import com.webtest.demo.Front_login;
 import com.webtest.demo.Login_Action;
 import com.webtest.utils.ReadProperties;
 
+/**
+ * 项目名称：TPshopBKL   
+ * 类名称：Test_DingDan   
+ * 类描述：订单模块：（订单管理，下单，支付等）
+ * @author 李晓月  
+ */
 public class Test_DingDan extends BaseTest {
 
 	Front_login action;

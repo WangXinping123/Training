@@ -28,7 +28,7 @@ import com.webtest.utils.ReadProperties;
  * 项目名称：TPSHOP   
  * 类名称：TestAddCart   
  * 类描述： 多次添加不同属性的相同商品
- * @author wangxinping 
+ * @author 王欣平
  * 创建时间：2019年11月29日 下午4:26:14   
  * @version  
  */

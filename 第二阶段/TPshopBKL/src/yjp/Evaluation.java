@@ -13,7 +13,7 @@ import com.webtest.demo.Front_login;
 /**
  * 我的评价
  * 
- * @author yjp
+ * @author 杨久鹏
  *
  */
 public class Evaluation extends BaseTest {

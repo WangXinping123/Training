@@ -5,7 +5,10 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-
+/**
+ * 项目名称：TPshopBKL   
+ * @author 杨硕 
+ */
 public class SyTestlogin extends BaseTest{
   @Test (description="登入后首页跳转功能1")
   public void SYtest1() throws InterruptedException {

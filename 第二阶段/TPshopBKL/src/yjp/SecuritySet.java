@@ -8,11 +8,12 @@ import org.testng.asserts.SoftAssert;
 
 import com.webtest.core.BaseTest;
 import com.webtest.demo.Front_login;
-
+/**
+ * 杨久鹏
+ * 安全设置
+ */
 public class SecuritySet extends BaseTest {
-	/**
-	 * 安全设置
-	 */
+	
 	static public String url = "http://localhost:8036/";
 	SoftAssert soft = new SoftAssert();
 

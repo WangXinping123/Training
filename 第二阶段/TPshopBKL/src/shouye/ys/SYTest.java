@@ -9,7 +9,11 @@ import org.testng.annotations.BeforeMethod;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterMethod;
-
+/**
+ * 项目名称：TPshopBKL   
+ * 前台首页：（搜索，跳转，链接等），商品评价，退货 
+ * @author 杨硕 
+ */
 public class SYTest extends BaseTest {
 	@Test(description = "首页跳转测试未登入1")
 	public void SYtest1() throws InterruptedException {

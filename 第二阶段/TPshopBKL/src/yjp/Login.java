@@ -5,7 +5,7 @@ import com.webtest.core.WebDriverEngine;
 
 /**
  * Login
- * @author yjp
+ * @author 杨久鹏
  *
  */
 public class Login extends BaseTest{
